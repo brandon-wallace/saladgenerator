@@ -19,7 +19,7 @@ $(document).ready(function() {
 
 // Javascript code
 
-const ingredients = ['romaine', 'watercress', 'spinach', 'kale', 'bok choi', 'cabbage', 'arugula', 'danileon'];
+// const ingredients = ['romaine', 'watercress', 'spinach', 'kale', 'bok choi', 'cabbage', 'arugula', 'danileon'];
 
 const extraFlavor = ['blue cheese', 'finely chopped red onion', 'english cucumber',
 'finely chopped shallots', 'chick peas', 'chopped parsely', 'walnuts',
@@ -32,8 +32,8 @@ const oils = ['extra virgin olive oil', 'olive oil', 'sesame seed oil', 'avocado
 
 const spices = ['fresh ground black pepper', 'pinch of salt'];
 
-let slots = document.querySelector('.slots');
-let cols = document.querySelectorAll('.column');
+// let slots = document.querySelector('.slots');
+// let cols = document.querySelectorAll('.column');
 
 
 const spin = () => {
@@ -54,6 +54,22 @@ const addFlavor = () => {
   const extraItem = extraFlavor[Math.round(Math.random() * extraFlavor.length)];
   document.getElementById('more-flavor').innerHTML = extraItem + ' ' + extraFlavor;
 }
+
+
+(function(){
+  const ingredients = ['avocado1', 'cherry_tomato', 'corn', 'red_pepper'];
+  const slots = document.querySelectorAll('.column > img');
+
+  setTimeout(function() {
+    slots[0].src = 'images/' + ingredients[Math.floor(Math.random() * ingredients.length)] + '.png';
+  }, 1000);
+  setTimeout(function() {
+    slots[1].src = 'images/' + ingredients[Math.floor(Math.random() * ingredients.length)] + '.png';
+  }, 2000);
+  setTimeout(function() {
+    slots[2].src = 'images/' + ingredients[Math.floor(Math.random() * ingredients.length)] + '.png';
+  }, 3000);
+})();
 
 
 // END Javascript code
