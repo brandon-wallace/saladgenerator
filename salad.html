@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="type/svg" href="images/favicon.svg">
+    <link rel="stylesheet" href="css/style.css">
+    <title>simple salad recipe generator</title>
+  </head>
+
+  <body>
+
+    <article>
+
+      <nav>
+        <ul id="menu">
+          <li><a href="index.html">home</a></li>
+          <li class="hidden"><a href="salad.html">generate recipe</a></li>
+          <li class="hidden"><a href="info.html">info</a></li>
+          <li class="hidden"><a href="about.html">about</a></li>
+          <li class="hidden"><a href="contact.html">contact</a></li>
+        </ul>
+      </nav><!-- END navigation -->
+
+      <div class="container">
+        <div class="row">
+
+          <div class="slots">
+            <div class="column">
+              <!-- <img src="images/slot1.gif" alt="vegetable" class="vegetable"> -->
+              <img src="https://via.placeholder.com/555/000000/FFFFFF/?text=Eat-your-vegetables1.com" alt="vegetable1" class="vegetable">
+            </div>
+
+            <div class="column">
+              <!-- <img src="images/slot2.gif" alt="vegetable" class="vegetable"> -->
+              <img src="https://via.placeholder.com/555/000000/FFFFFF/?text=Eat-your-vegetables2.com" alt="vegetable2" class="vegetable">
+            </div>
+
+            <div class="column">
+              <!-- <img src="images/slot3.gif" alt="vegetable" class="vegetable"> -->
+              <img src="https://via.placeholder.com/555/000000/FFFFFF/?text=Eat-your-vegetables3.com" alt="vegetable3" class="vegetable">
+            </div>
+
+            <div class="column hide">
+              <!-- <img src="images/slot3.gif" alt="vegetable" class="vegetable"> -->
+              <img src="https://via.placeholder.com/555/000000/FFFFFF/?text=Eat-your-vegetables4.com" alt="vegetable4" class="vegetable">
+            </div>
+
+            <div class="column hide">
+              <!-- <img src="images/slot3.gif" alt="vegetable" class="vegetable"> -->
+              <img src="https://via.placeholder.com/555/000000/FFFFFF/?text=Eat-your-vegetables5.com" alt="vegetable5" class="vegetable">
+            </div>
+          </div><!-- END slots -->
+
+        </div><!-- END row -->
+
+        <div id="more-flavor"></div>
+        </div><!-- END container -->
+
+      <footer>
+
+        <div class="email-info">
+          <input type="button" onclick="spin()" value="GENERATE">
+          <button type="button" onclick="addFlavor()">ADD EXTRA FLAVOR</button>
+          <label for="email">EMAIL RECIPE :</label>
+          <input type="email" name="email" aria-required="true" placeholder="Enter email" required>
+        </div>
+
+      </footer><!-- END footer -->
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js" integrity="sha384-THVO/sM0mFD9h7dfSndI6TS0PgAGavwKvB5hAxRRvc0o9cPLohB0wb/PTA7LdUHs" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+  </body>
+
+</html>

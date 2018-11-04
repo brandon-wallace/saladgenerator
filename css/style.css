@@ -1,0 +1,292 @@
+/*
+¸.•*´¨`*•.¸¸.•*´¨`*•.¸¸.•*´¨`*•.¸¸.•*´¨`*•.¸¸.•*´¨`*•.¸¸.•*´¨`*•.¸¸.•*´¨`*•.
+::: *...*...*...*...*...*...*...*...*...*...* *...*...*...*...*...*...*...*
+*::::::::::::: :::::::: created by: BRANDON WALLACE :::::::::: ::::::::::::
+•..*...*...*...*...*¤...*...*...*...*...*...*...*...*...*...*...*...*...*..*
+•*´¨`*•.¸¸.•*´¨`*•.¸¸.•*´¨`*•.¸¸.•*´¨`*•.¸¸.••*´¨`*•.¸¸.•*´¨`*•.¸¸.•*´¨`*•.¸
+*/
+
+@font-face {
+  font-family: 'FredokaOne-Regular';
+  src: url('../fonts/FredokaOne-Regular.otf') format('opentype');
+}
+
+* {
+  box-sizing: border-box;
+  /* border: 1px solid #FF0000; */
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ADE362;
+  font-family: Helvetica, sans-serif;
+}
+
+nav {
+  height: 5%;
+  background-color: #FFF1A0;
+}
+
+article {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  height: 10%;
+  width: 100%;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ADE362;
+}
+
+.container {
+  height: 850%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row {
+  width: 100%;
+  margin-top: 125px;
+  /* height: 100%; */
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: center;
+}
+
+.col {
+  height: 95%;
+  width: 360px;
+  margin: 0 auto;
+  display: flex;
+  max-height: 800px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#more-flavor {
+  height: 25px;
+}
+
+img {
+  width: auto;
+  height: 100%;
+  max-width: 300px;
+}
+
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.email-info {
+
+  width: 300px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.email-info input {
+  width: 100%;
+}
+
+#landing-page {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('../images/lettuce.jpg');
+}
+
+#menu {
+  margin: 0;
+  width: 100%;
+  padding-left: 0;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  background-color: #ADE362;
+}
+
+#menu:hover li {
+  display: block;
+}
+
+li {
+  padding: 10px;
+  margin-bottom: 1px;
+  background-color: #599900;
+}
+
+.hidden {
+  display: none;
+}
+
+h1 {
+  width: 90%;
+  font-size: 2.5rem;
+  color: #ff6300;
+  text-align: center;
+  margin: 5px 0px 0px 0px;
+  text-shadow: 1px 1px 0 #FFFFFF,
+               2px 2px 0 #FFFFFF,
+               3px 3px 0 #FFFFFF,
+               4px 4px 0 #FFFFFF,
+               5px 5px 0 #FFFFFF,
+               6px 6px 0 #FFFFFF,
+               7px 7px 2px rgba(0, 0, 0, 0.9),
+               7px 7px 4px rgba(0, 0, 0, 0.9);
+  font-family: 'FredokaOne-Regular', Helvetica, sans-serif;
+}
+
+#button {
+  width: 70%;
+  /* outline: 0; */
+  padding: 15px;
+  color: #FFFFFF;
+  max-width: 300px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 8px;
+  letter-spacing: .25rem;
+  border: 4px solid #000000;
+  background-color: #ff6300;
+  box-shadow: inset 0 0 0 4px #999999,
+                    9px 9px 2px 1px rgba(0, 0, 0, .9);
+  font-family: 'FredokaOne-Regular', Helvetica, sans-serif;
+}
+
+#button:hover {
+  box-shadow: inset 0 0 0 4px #999999,
+              2px 2px 2px 1px rgba(0, 0, 0, .9);
+}
+
+#banner-text,
+#button,
+#gif-img {
+  display: none;
+}
+
+/* Salad page */
+
+.slots {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid #FF0000;
+}
+
+.hide {
+  display: none;
+}
+
+.column {
+  max-width: 300px;
+  height: auto;
+  border: solid #FFDE00;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* Info page */
+
+#vegetables_walking {
+  width: 100%;
+  height: auto;
+  max-width: 650px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* END Info page */
+
+/* About page */
+
+#about-page {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('../images/leafy_greens.jpg');
+}
+
+/* END About page */
+
+/* Contact page */
+
+#contact-page {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('../images/spinach_leaves.jpg');
+}
+
+/* END Contact page */
+
+
+/* Media Queries */
+
+@media only screen and (min-width: 576px) {
+  h1 {
+    width: 100%;
+    font-size: 3.5rem;
+  }
+  .col {
+    height: 90%;
+  }
+  #menu {
+    width: 150px;
+  }
+}
+
+@media only screen and (min-width: 786px) {
+  h1 {
+    font-size: 5rem;
+  }
+  .col {
+    width: 80%;
+  }
+  .column {
+    width: 100%;
+  }
+  .slots {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 922px) {
+  h1 {
+    font-size: 6rem;
+  }
+  img {
+    max-width: 350px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+}
