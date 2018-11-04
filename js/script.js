@@ -32,7 +32,10 @@ const day = now.getDate();
 const month = now.getMonth();
 const year = now.getFullYear();
 console.log(doc.getCreationDate());
-doc.save(`recipe-${year}-${month}-${day}.pdf`);
+
+const downloadRecipe = () => {
+  doc.save(`recipe-${year}-${month}-${day}.pdf`);
+}
 
 // END jsPDF code
 
