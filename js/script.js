@@ -77,13 +77,9 @@ const year = String(now.getFullYear());
 
 doc.setFontSize(12);
 doc.addImage(veggies, 'JPG', 100, 225, 100, 50);
-doc.text(
-  now.toString() +
-  '\n' +
-  '\nLine 1' +
-  '\nLine 2' +
-  '\n\nYour recipe simple salad recipe!', 10, 10
-);
+doc.text(now.toString(), 10, 10);
+doc.text('Your recipe simple salad recipe!:', 10, 30);
+doc.text('Line 3', 10, 40);
 
 const downloadRecipe = () => {
   doc.save(`recipe-${year}-${month}-${day}.pdf`);
