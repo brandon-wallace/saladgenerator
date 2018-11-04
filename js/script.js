@@ -75,14 +75,18 @@ const month = String(now.getMonth());
 const year = String(now.getFullYear());
 // console.log(doc.getCreationDate());
 
-doc.setFontSize(12);
+doc.setFontSize(16);
 doc.addImage(veggies, 'JPG', 100, 225, 100, 50);
 doc.text(now.toString(), 10, 10);
-doc.text('Your recipe simple salad recipe!:', 10, 30);
-doc.text('Line 3', 10, 40);
+doc.setFontSize(14);
+doc.text('Your recipe simple salad recipe:', 10, 30);
+doc.setFontSize(10);
+doc.text('* Line 3', 10, 40);
+
 
 const downloadRecipe = () => {
   doc.save(`recipe-${year}-${month}-${day}.pdf`);
 }
+
 
 // END jsPDF code
