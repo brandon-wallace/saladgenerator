@@ -21,54 +21,45 @@
           <li class="hidden"><a href="about.html">about</a></li>
           <li class="hidden"><a href="contact.html">contact</a></li>
         </ul>
-      </nav><!-- END navigation -->
+      </nav><!-- END nav -->
 
-      <div class="container">
-        <div class="row">
-
-          <div class="slots">
-            <div class="column slot1">
-              <img src="images/slot1.gif" alt="vegetable" class="vegetable">
-              <!-- <img src="https://via.placeholder.com/555/000000/FFFFFF/?text=Eat-your-vegetables1.com" alt="vegetable1" class="vegetable"> -->
-            </div>
-
-            <div class="column slot2">
-              <img src="images/slot2.gif" alt="vegetable" class="vegetable">
-              <!-- <img src="https://via.placeholder.com/555/000000/FFFFFF/?text=Eat-your-vegetables2.com" alt="vegetable2" class="vegetable"> -->
-            </div>
-
-            <div class="column slot3">
-              <img src="images/slot3.gif" alt="vegetable" class="vegetable">
-              <!-- <img src="https://via.placeholder.com/555/000000/FFFFFF/?text=Eat-your-vegetables3.com" alt="vegetable3" class="vegetable"> -->
-            </div>
-
-            <div class="column slot4 hide">
-              <img src="images/slot3.gif" alt="vegetable" class="vegetable">
-              <!-- <img src="https://via.placeholder.com/555/000000/FFFFFF/?text=Eat-your-vegetables4.com" alt="vegetable4" class="vegetable"> -->
-            </div>
-
-            <div class="column slot5 hide">
-              <img src="images/slot3.gif" alt="vegetable" class="vegetable">
-              <!-- <img src="https://via.placeholder.com/555/000000/FFFFFF/?text=Eat-your-vegetables5.com" alt="vegetable5" class="vegetable"> -->
-            </div>
-          </div><!-- END slots -->
-
-        </div><!-- END row -->
-
-        <div id="more-flavor"></div>
-        </div><!-- END container -->
-
-      <footer>
-
+      <header>
         <div class="controls">
           <button type="button" onclick="spin()">GENERATE</button>
           <button type="button" onclick="addFlavor()">ADD EXTRA FLAVOR</button>
           <button type="button" onclick="downloadRecipe()">DOWNLOAD</button>
         </div>
+      </header><!-- END header -->
 
-      </footer><!-- END footer -->
+      <section>
+        <div class="slots">
 
-    <script src="js/jquery-3.3.1.min.js"></script>
+          <div class="slot1">
+            <img id="slot1" src="images/slot1.gif" alt="vegetable">
+          </div>
+
+          <div class="slot2">
+            <img id="slot2" src="images/slot2.gif" alt="vegetable">
+          </div>
+
+          <div class="slot3">
+            <img id="slot3" src="images/slot3.gif" alt="vegetable">
+          </div>
+
+          <div class="slot4 hide">
+            <img id="slot4" src="images/slot3.gif" alt="vegetable">
+          </div>
+
+          <div class="slot5 hide">
+            <img id="slot5" src="images/slot3.gif" alt="vegetable">
+          </div>
+
+        </div>
+      </section><!-- END section -->
+
+    </article><!-- END article -->
+
+    <!-- <script src="js/jquery-3.3.1.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js" integrity="sha384-THVO/sM0mFD9h7dfSndI6TS0PgAGavwKvB5hAxRRvc0o9cPLohB0wb/PTA7LdUHs" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
   </body>
