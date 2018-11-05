@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="type/svg" href="images/favicon.svg">
+    <link rel="icon" type="type/png" href="images/favicon.png">
     <link rel="stylesheet" href="css/style.css">
     <title>simple salad recipe generator</title>
   </head>
@@ -25,7 +25,7 @@
 
       <header>
         <div class="controls">
-          <button type="button" onclick="spin()">GENERATE</button>
+          <button type="button" onclick="regenerate()">REGENERATE</button>
           <button type="button" onclick="addFlavor()">ADD EXTRA FLAVOR</button>
           <button type="button" onclick="downloadRecipe()">DOWNLOAD</button>
         </div>
@@ -53,13 +53,14 @@
           <div class="slot5 hide">
             <img id="slot5" src="images/slot3.gif" alt="vegetable">
           </div>
-
+          <h2 id="more-flavor1"></h2>
+          <h2 id="more-flavor2"></h2>
         </div>
       </section><!-- END section -->
 
     </article><!-- END article -->
 
-    <!-- <script src="js/jquery-3.3.1.min.js"></script> -->
+    <script src="js/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js" integrity="sha384-THVO/sM0mFD9h7dfSndI6TS0PgAGavwKvB5hAxRRvc0o9cPLohB0wb/PTA7LdUHs" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
   </body>
