@@ -93,25 +93,6 @@ a {
   text-decoration: none;
 }
 
-.controls {
-  width: 300px;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.controls button {
-  border: 0;
-  width: 100%;
-  padding: 6px;
-  color: #FFFFFF;
-  border-radius: 5px;
-  margin-bottom: 4px;
-  background-color: #17210c;
-}
-
 #landing-page {
   background-size: cover;
   background-position: center;
@@ -149,7 +130,7 @@ li {
 h1 {
   width: 90%;
   font-size: 2.5rem;
-  color: #ff6300;
+  color: #FF4000;
   text-align: center;
   margin: 5px 0px 0px 0px;
   text-shadow: 1px 1px 0 #FFFFFF,
@@ -175,13 +156,13 @@ h1 {
   letter-spacing: .25rem;
   border: 4px solid #000000;
   background-color: #ff6300;
-  box-shadow: inset 0 0 0 4px #999999,
+  box-shadow: inset 0 0 0 4px #FFFFFF,
                     9px 9px 2px 1px rgba(0, 0, 0, .9);
   font-family: 'FredokaOne-Regular', Helvetica, sans-serif;
 }
 
 #button:hover {
-  box-shadow: inset 0 0 0 4px #999999,
+  box-shadow: inset 0 0 0 4px #FFFFFF,
               2px 2px 2px 1px rgba(0, 0, 0, .9);
 }
 
@@ -192,6 +173,29 @@ h1 {
 }
 
 /* Salad page */
+
+.controls {
+  width: 300px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.controls button {
+  border: 0;
+  width: 100%;
+  padding: 6px;
+  color: #FFFFFF;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-bottom: 4px;
+  border: 4px solid #000000;
+  background-color: #17210c;
+  box-shadow: inset 0 0 0 4px #FFFFFF,
+                    9px 9px 2px 1px rgba(0, 0, 0, .9);
+}
 
 .slots {
   width: 100%;
