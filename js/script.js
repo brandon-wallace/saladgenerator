@@ -20,10 +20,6 @@ $(document).ready(function() {
 // Javascript code
 
 // const ingredients = ['romaine', 'watercress', 'spinach', 'kale', 'bok choi', 'cabbage', 'arugula', 'danileon'];
-
-// const extraFlavor = ['blue cheese', 'finely chopped red onion', 'english cucumber',
-// 'finely chopped shallots', 'chick peas', 'chopped parsely', 'walnuts',
-// 'fresh minced garlic'];
 //
 // const acids = ['lemon juice', 'lime juice', 'balsamic vinegar', 'plain yogurt',
 // 'apple cider vinegar', 'red wine vinegar', 'banana vinegar', 'mustard', 'rice wine vinegar'];
@@ -50,31 +46,51 @@ $(document).ready(function() {
 // }
 //
 //
-// const addFlavor = () => {
-//   const extraItem = extraFlavor[Math.round(Math.random() * extraFlavor.length)];
-//   document.getElementById('more-flavor').innerHTML = extraItem + ' ' + extraFlavor;
-// }
 
 
 (function(){
 
-  const ingredients = ['avocado1', 'cherry_tomato', 'corn', 'red_pepper'];
+  const ingredient1 = ['kale_flat_leaf', 'kale_curly', 'romaine', 'spinach'];
+  const ingredient2 = ['bok_choy', 'fresh_corn', 'cucumbers', 'red_pepper'];
+  const ingredient3 = ['avocado1', 'cherry_tomato', 'corn', 'tomatoes'];
 
-  let slot1 = document.getElementById('slot1').src;
-  let slot2 = document.getElementById('slot2').src;
-  let slot3 = document.getElementById('slot3').src;
+  let slot1 = document.getElementById('slot1');
+  let slot2 = document.getElementById('slot2');
+  let slot3 = document.getElementById('slot3');
 
   setTimeout(function() {
-    slot1.src = 'images/' + ingredients[Math.floor(Math.random() * ingredients.length)] + '.png';
+    slot1.src = 'images/' + ingredient1[Math.floor(Math.random() * ingredient1.length)] + '.png';
   }, 1000);
   setTimeout(function() {
-    slot2.src = 'images/' + ingredients[Math.floor(Math.random() * ingredients.length)] + '.png';
+    slot2.src = 'images/' + ingredient2[Math.floor(Math.random() * ingredient2.length)] + '.png';
   }, 2000);
   setTimeout(function() {
-    slot3.src = 'images/' + ingredients[Math.floor(Math.random() * ingredients.length)] + '.png';
+    slot3.src = 'images/' + ingredient3[Math.floor(Math.random() * ingredient3.length)] + '.png';
   }, 3000);
 
 })();
+
+// const extraFlavor = ['blue cheese', 'finely chopped red onion', 'english cucumber',
+// 'finely chopped shallots', 'chick peas', 'chopped parsely', 'walnuts',
+// 'fresh minced garlic'];
+
+
+const addFlavor = () => {
+
+  const extraFlavor = ['flax_seeds', 'walnuts'];
+
+  let slot4 = document.getElementById('slot4');
+  let slot5 = document.getElementById('slot5');
+
+  slot4.src = 'images/' + extraFlavor[Math.floor(Math.random() * extraFlavor.length)] + '.png';
+  slot5.src = 'images/' + extraFlavor[Math.floor(Math.random() * extraFlavor.length)] + '.png';
+
+}
+
+
+const regenerate = () => {
+  window.location.reload();
+}
 
 
 // END Javascript code
