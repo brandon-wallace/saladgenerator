@@ -223,9 +223,9 @@ button:hover {
   border: 8px solid;
 }
 
-.hide {
+/* .hide {
   display: none;
-}
+} */
 
 img {
   width: 250px;
@@ -275,7 +275,11 @@ img {
     width: 100%;
     font-size: 3.5rem;
   }
-  .col {
+  img {
+    width: 100%;
+    height: auto;
+  }
+  .column {
     height: 90%;
   }
   #menu {
@@ -299,12 +303,13 @@ img {
     width: 80%;
   }
   .slots {
+    width: 100%;
     display: flex;
     flex-direction: row;
   }
   img {
-    width: auto;
-    height: 100%;
+    width: 100%;
+    height: auto;
     /* max-width: 300px; */
   }
   .controls {
