@@ -7,6 +7,7 @@
 */
 
 // JQuery code
+/* Just a little bit of JQuery. */
 
 $(document).ready(function() {
   $('#banner-text').fadeIn(1000);
@@ -51,8 +52,8 @@ $(document).ready(function() {
 (function(){
 
   const ingredient1 = ['kale_flat_leaf', 'kale_curly', 'romaine', 'spinach'];
-  const ingredient2 = ['bok_choy', 'fresh_corn', 'cucumbers', 'red_pepper'];
-  const ingredient3 = ['avocado1', 'cherry_tomato', 'corn', 'tomatoes'];
+  const ingredient2 = ['bok_choy', 'fresh_corn', 'cucumbers', 'red_pepper', 'yellow_pepper'];
+  const ingredient3 = ['avocado1', 'cherry_tomato', 'corn', 'tomatoes', 'walnut'];
 
   let slot1 = document.getElementById('slot1');
   let slot2 = document.getElementById('slot2');
@@ -76,15 +77,23 @@ $(document).ready(function() {
 
 
 const addFlavor = () => {
-
-  const extraFlavor = ['flax_seeds', 'walnuts'];
+  const extraFlavor1 = ['flax_seeds', 'walnuts'];
+  const extraFlavor2 = ['orange_slices', 'snap_peas'];
 
   let slot4 = document.getElementById('slot4');
   let slot5 = document.getElementById('slot5');
 
-  slot4.src = 'images/' + extraFlavor[Math.floor(Math.random() * extraFlavor.length)] + '.png';
-  slot5.src = 'images/' + extraFlavor[Math.floor(Math.random() * extraFlavor.length)] + '.png';
-
+  const item4 = extraFlavor1[Math.floor(Math.random() * extraFlavor1.length)];
+  const item5 = extraFlavor2[Math.floor(Math.random() * extraFlavor2.length)];
+  console.log(item4);
+  console.log(item5);
+  
+  setTimeout(function() {
+    slot4.src = 'images/' + item4 + '.png';
+  }, 1000);
+  setTimeout(function() {
+    slot5.src = 'images/' + item5 + '.png';
+  }, 1000);
 }
 
 
