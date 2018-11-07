@@ -80,15 +80,16 @@ const addFlavor = () => {
   const extraFlavor1 = ['flax_seeds', 'walnuts'];
   const extraFlavor2 = ['orange_slices', 'snap_peas'];
 
+  document.getElementById('extras').removeAttribute('class', 'hide');
+  
   let slot4 = document.getElementById('slot4');
   let slot5 = document.getElementById('slot5');
 
   const item4 = extraFlavor1[Math.floor(Math.random() * extraFlavor1.length)];
   const item5 = extraFlavor2[Math.floor(Math.random() * extraFlavor2.length)];
-  console.log(item4);
-  console.log(item5);
-  
+
   setTimeout(function() {
+    slot4.setAttribute('class', 'fading');
     slot4.src = 'images/' + item4 + '.png';
   }, 1000);
   setTimeout(function() {
