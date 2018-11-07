@@ -179,12 +179,24 @@ h1 {
 }
 
 /* Salad page */
-
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation-name: fadeIn;
+  animation-duration: 1000ms;
+  animation-iteration-count: 1;
+}
 section {
   height: 85%;
-  width: 100%;
+  width: 90%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   border: solid #FF0000;
@@ -220,7 +232,10 @@ button:hover {
 }
 
 .slots {
+  width: 100%;
   border: 8px solid;
+  display: flex;
+  flex-direction: column;
 }
 
 /* .hide {
@@ -228,7 +243,7 @@ button:hover {
 } */
 
 img {
-  width: 250px;
+  width: 100%;
   height: auto;
 }
 
