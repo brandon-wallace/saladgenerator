@@ -152,7 +152,6 @@ h1 {
 
 #button {
   width: 70%;
-  /* outline: 0; */
   padding: 15px;
   color: #FFFFFF;
   max-width: 300px;
@@ -193,12 +192,13 @@ h1 {
   animation-iteration-count: 1;
 }
 section {
-  height: 85%;
+  /* height: 85%; */
+  min-height: 620px;
   width: 90%;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   border: solid #FF0000;
 }
 
@@ -233,14 +233,21 @@ button:hover {
 
 .slots {
   width: 100%;
-  border: 8px solid;
+  border: 1px solid;
   display: flex;
   flex-direction: column;
 }
 
-/* .hide {
+.slot1,
+.slot2,
+.slot3 {
+  display: flex;
+  justify-content: center;
+}
+
+.hide {
   display: none;
-} */
+}
 
 img {
   width: 100%;
