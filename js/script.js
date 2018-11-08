@@ -20,35 +20,6 @@ $(document).ready(function() {
 
 // Javascript code
 
-// const ingredients = ['romaine', 'watercress', 'spinach', 'kale', 'bok choi', 'cabbage', 'arugula', 'danileon'];
-//
-// const acids = ['lemon juice', 'lime juice', 'balsamic vinegar', 'plain yogurt',
-// 'apple cider vinegar', 'red wine vinegar', 'banana vinegar', 'mustard', 'rice wine vinegar'];
-//
-// const oils = ['extra virgin olive oil', 'olive oil', 'sesame seed oil', 'avocado oil', 'grapeseed oil', 'peanut oil'];
-//
-// const spices = ['fresh ground black pepper', 'pinch of salt'];
-
-// let slots = document.querySelector('.slots');
-// let cols = document.querySelectorAll('.column');
-
-
-// const spin = () => {
-//
-//   const ingredients = ['avocado1', 'cherry_tomato', 'corn', 'red_pepper',
-//         'sweet_onion', 'cabbage1', 'romaine', 'string_beans', 'spinach',
-//         'tomatoes', 'carrots', 'radish', 'cucumbers', 'kale_curly', 'bok_choy'];
-//
-//   const images = document.querySelectorAll('img.vegetable');
-//   for (let i = 0; i < 3; i++) {
-//     images[i].src = 'images/' + ingredients[Math.floor(Math.random() * ingredients.length)] + '.png';
-//
-//   }
-// }
-//
-//
-
-
 (function(){
 
   const ingredient1 = ['kale_flat_leaf', 'kale_curly', 'romaine', 'spinach'];
@@ -71,22 +42,22 @@ $(document).ready(function() {
 
 })();
 
-// const extraFlavor = ['blue cheese', 'finely chopped red onion', 'english cucumber',
-// 'finely chopped shallots', 'chick peas', 'chopped parsely', 'walnuts',
-// 'fresh minced garlic'];
-
 
 const addFlavor = () => {
   const extraFlavor1 = ['flax_seeds', 'walnuts'];
-  const extraFlavor2 = ['orange_slices', 'snap_peas', 'onion2', 'shallot'];
+  const extraFlavor2 = ['orange_slices', 'snap_peas'];
+  const extraFlavor3 = ['onion2', 'shallot'];
 
   document.getElementById('extras').removeAttribute('class', 'hide');
-
+  document.getElementById('extras').classList.add('slots');
+  
   let slot4 = document.getElementById('slot4');
   let slot5 = document.getElementById('slot5');
+  let slot6 = document.getElementById('slot6');
 
   const item4 = extraFlavor1[Math.floor(Math.random() * extraFlavor1.length)];
   const item5 = extraFlavor2[Math.floor(Math.random() * extraFlavor2.length)];
+  const item6 = extraFlavor3[Math.floor(Math.random() * extraFlavor3.length)];
 
   setTimeout(function() {
     slot4.setAttribute('class', 'fading');
@@ -95,8 +66,11 @@ const addFlavor = () => {
   setTimeout(function() {
     slot5.src = 'images/' + item5 + '.png';
   }, 1000);
+  setTimeout(function() {
+    slot6.src = 'images/' + item6 + '.png';
+  }, 1000);
 
-  return slot1, slot2, slot3, slot4, slot5;
+  // return slot1, slot2, slot3, slot4, slot5;
 }
 
 
@@ -156,3 +130,34 @@ const downloadRecipe = () => {
 
 
 // END jsPDF code
+
+
+// const extraFlavor = ['blue cheese', 'finely chopped red onion', 'english cucumber',
+// 'finely chopped shallots', 'chick peas', 'chopped parsely', 'walnuts',
+// 'fresh minced garlic'];
+
+// const ingredients = ['romaine', 'watercress', 'spinach', 'kale', 'bok choi', 'cabbage', 'arugula', 'danileon'];
+//
+// const acids = ['lemon juice', 'lime juice', 'balsamic vinegar', 'plain yogurt',
+// 'apple cider vinegar', 'red wine vinegar', 'banana vinegar', 'mustard', 'rice wine vinegar'];
+//
+// const oils = ['extra virgin olive oil', 'olive oil', 'sesame seed oil', 'avocado oil', 'grapeseed oil', 'peanut oil'];
+//
+// const spices = ['fresh ground black pepper', 'pinch of salt'];
+
+// let slots = document.querySelector('.slots');
+// let cols = document.querySelectorAll('.column');
+// const spin = () => {
+//
+//   const ingredients = ['avocado1', 'cherry_tomato', 'corn', 'red_pepper',
+//         'sweet_onion', 'cabbage1', 'romaine', 'string_beans', 'spinach',
+//         'tomatoes', 'carrots', 'radish', 'cucumbers', 'kale_curly', 'bok_choy'];
+//
+//   const images = document.querySelectorAll('img.vegetable');
+//   for (let i = 0; i < 3; i++) {
+//     images[i].src = 'images/' + ingredients[Math.floor(Math.random() * ingredients.length)] + '.png';
+//
+//   }
+// }
+//
+//
