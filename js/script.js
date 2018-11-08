@@ -52,8 +52,8 @@ $(document).ready(function() {
 (function(){
 
   const ingredient1 = ['kale_flat_leaf', 'kale_curly', 'romaine', 'spinach'];
-  const ingredient2 = ['bok_choy', 'fresh_corn', 'cucumbers', 'red_pepper', 'yellow_pepper'];
-  const ingredient3 = ['avocado1', 'cherry_tomato', 'corn', 'tomatoes', 'walnut'];
+  const ingredient2 = ['bok_choy', 'fresh_corn', 'cucumbers', 'red_pepper', 'yellow_pepper', 'radish'];
+  const ingredient3 = ['avocado1', 'cherry_tomato', 'string_beans', 'tomatoes'];
 
   let slot1 = document.getElementById('slot1');
   let slot2 = document.getElementById('slot2');
@@ -78,10 +78,10 @@ $(document).ready(function() {
 
 const addFlavor = () => {
   const extraFlavor1 = ['flax_seeds', 'walnuts'];
-  const extraFlavor2 = ['orange_slices', 'snap_peas'];
+  const extraFlavor2 = ['orange_slices', 'snap_peas', 'onion2', 'shallot'];
 
   document.getElementById('extras').removeAttribute('class', 'hide');
-  
+
   let slot4 = document.getElementById('slot4');
   let slot5 = document.getElementById('slot5');
 
@@ -95,6 +95,8 @@ const addFlavor = () => {
   setTimeout(function() {
     slot5.src = 'images/' + item5 + '.png';
   }, 1000);
+
+  return slot1, slot2, slot3, slot4, slot5;
 }
 
 
@@ -120,17 +122,30 @@ const hour = String(now.getHours());
 const day = String(now.getDate());
 const month = String(now.getMonth());
 const year = String(now.getFullYear());
+const dressing1 = 'Create a salad dressing with 1/3 fresh squeezed lime juice, lemon juice, or vinegar '
+const dressing2 = 'with 2/3 extra virgin olive oil. Add fresh ground black pepper.'
+const instructions1 = 'Rinse vegetables throughly and chop all ingredients.'
+const instructions2 = 'Mix salad together in a bowl with the salad dressing.'
 
 doc.setFontSize(6);
 doc.setFont('Helvetica');
 doc.addImage(veggiesImg, 'JPG', 45, 195, 150, 85);
 doc.text(now.toString(), 10, 10);
-doc.setFontSize(18);
+doc.setFontSize(32);
 doc.setTextColor(173, 227, 98);
 doc.text('Your recipe simple salad recipe:', 10, 30);
 doc.setFontSize(12);
 doc.setTextColor(0, 0, 0);
-doc.text('* Line 3', 10, 40);
+doc.text('spinach', 10, 60);
+doc.text('fresh corn kernels', 10, 70);
+doc.text('avocado', 10, 80);
+doc.text('roasted flax seeds', 10, 90);
+doc.text('walnuts', 10, 100);
+doc.text(instructions1, 10, 120);
+doc.text(dressing1, 10, 130);
+doc.text(dressing2, 10, 140);
+doc.text(instructions2, 10, 150);
+
 doc.setPage(1);
 
 
