@@ -16,13 +16,6 @@
   /* border: 1px solid #FF0000; */
 }
 
-footer,
-article,
-.container,
-.row {
-  border: solid;
-}
-
 html {
   /* Set correct line height for all browsers. */
   line-height: 1.15;
