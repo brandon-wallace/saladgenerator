@@ -236,6 +236,12 @@ button:hover {
   display: none;
 }
 
+#gif-img {
+  width: 100%;
+  height: auto;
+  max-width: 320px;
+}
+
 #slot1,
 #slot2,
 #slot3,
