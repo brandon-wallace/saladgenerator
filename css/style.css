@@ -236,7 +236,12 @@ button:hover {
   display: none;
 }
 
-img {
+#slot1,
+#slot2,
+#slot3,
+#slot4,
+#slot5,
+#slot6 {
   width: 100%;
   height: auto;
   max-width: 320px;
@@ -325,7 +330,6 @@ img {
   img {
     width: 100%;
     height: auto;
-    /* max-width: 300px; */
   }
   .controls {
     width: 815px;
