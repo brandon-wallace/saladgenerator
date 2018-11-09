@@ -51,6 +51,7 @@ const addFlavor = () => {
   const extraFlavor2 = ['orange_slices', 'snap_peas'];
   const extraFlavor3 = ['onion2', 'shallot'];
 
+  // Display the extra ingredients.
   document.getElementById('extras').removeAttribute('class', 'hide');
   document.getElementById('extras').classList.add('slots');
 
@@ -65,13 +66,13 @@ const addFlavor = () => {
   setTimeout(function() {
     slot4.setAttribute('class', 'fading');
     slot4.src = 'images/' + item4 + '.png';
-  }, 1000);
+  }, 500);
   setTimeout(function() {
     slot5.src = 'images/' + item5 + '.png';
-  }, 2000);
+  }, 1000);
   setTimeout(function() {
     slot6.src = 'images/' + item6 + '.png';
-  }, 3000);
+  }, 1500);
 
 }
 
@@ -118,6 +119,7 @@ doc.setTextColor(173, 227, 98);
 doc.text('Your recipe simple salad recipe:', 10, 30);
 doc.setFontSize(12);
 doc.setTextColor(0, 0, 0);
+// Salad ingredients.
 doc.text('spinach', 10, 60);
 doc.text('fresh corn kernels', 10, 70);
 doc.text('avocado', 10, 80);
