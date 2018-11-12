@@ -121,6 +121,7 @@ const addFlavor = () => {
   doc.text(item4, 10, 90);
   doc.text(item5, 10, 100);
   doc.text(item6, 10, 110);
+  
 }
 
 
