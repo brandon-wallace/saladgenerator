@@ -33,10 +33,10 @@ const day = String(now.getDate());
 const month = String(now.getMonth());
 const year = String(now.getFullYear());
 // Instructions for recipe.
-const dressing1 = 'Create a salad dressing with 1/3 fresh squeezed lime juice, lemon juice, or vinegar '
-const dressing2 = 'with 2/3 extra virgin olive oil. Add fresh ground black pepper.'
+const dressing1 = 'Create a salad dressing with a ratio of 1/3 fresh squeezed lime juice,'
+const dressing2 = 'lemon juice, or vinegar to 2/3 extra virgin olive oil.'
 const instructions1 = 'Rinse vegetables throughly and chop all ingredients.'
-const instructions2 = 'Mix salad together in a bowl with the salad dressing.'
+const instructions2 = 'Mix salad together in a bowl with the salad dressing. Add fresh ground black pepper.'
 
 // Set font size.
 doc.setFontSize(6);
@@ -121,7 +121,7 @@ const addFlavor = () => {
   doc.text(item4, 10, 90);
   doc.text(item5, 10, 100);
   doc.text(item6, 10, 110);
-  
+
 }
 
 
