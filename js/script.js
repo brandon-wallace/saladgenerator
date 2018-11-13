@@ -33,10 +33,11 @@ const day = String(now.getDate());
 const month = String(now.getMonth());
 const year = String(now.getFullYear());
 // Instructions for recipe.
-const dressing1 = 'Create a salad dressing with a ratio of 1/3 fresh squeezed lime juice,'
+const dressing1 = 'Use a ratio of 2:1 of an oil and an acid.'
 const dressing2 = 'lemon juice, or vinegar to 2/3 extra virgin olive oil.'
-const instructions1 = 'Rinse vegetables throughly and chop all ingredients.'
-const instructions2 = 'Mix salad together in a bowl with the salad dressing. Add fresh ground black pepper.'
+const instructions1 = 'Rinse vegetables throughly and chop ingredients. In a large'
+const instructions2 = 'bowl toss the salad ingredients together. Add the salad '
+const instructions3 = 'dressing, a pinch of salt, and fresh ground black pepper.'
 
 // Set font size.
 doc.setFontSize(6);
@@ -47,8 +48,11 @@ doc.addImage(veggiesImg, 'JPG', 45, 195, 150, 85);
 doc.text(now.toString(), 10, 10);
 doc.setFontSize(32);
 doc.setTextColor(173, 227, 98);
-doc.text('Your recipe simple salad recipe:', 10, 30);
-doc.setFontSize(12);
+doc.text('Your simple salad recipe:', 10, 30);
+doc.setFontSize(22);
+doc.setTextColor(0, 0, 0);
+doc.text('Vegetables:', 10, 50);
+doc.setFontSize(16);
 doc.setTextColor(0, 0, 0);
 
 doc.setPage(1);
@@ -58,7 +62,7 @@ doc.setPage(1);
 
   const ingredient1 = ['kale_flat_leaf', 'kale_curly', 'romaine', 'spinach'];
   const ingredient2 = ['bok_choy', 'fresh_corn', 'cucumbers', 'red_pepper', 'yellow_pepper', 'radish'];
-  const ingredient3 = ['avocado', 'cherry_tomato', 'string_beans', 'tomatoes'];
+  const ingredient3 = ['avocado', 'cherry_tomato', 'string_beans', 'tomatoes', 'broccoli'];
 
   let slot1 = document.getElementById('slot1');
   let slot2 = document.getElementById('slot2');
@@ -85,6 +89,7 @@ doc.setPage(1);
   doc.text(dressing1, 10, 150);
   doc.text(dressing2, 10, 160);
   doc.text(instructions2, 10, 170);
+  doc.text(instructions3, 10, 180);
 
 })();
 
