@@ -1,0 +1,23 @@
+{
+  "name": "simple_salad_recipe_generator",
+  "version": "1.0.0",
+  "description": "Generate a simple three ingredient salad recipe saved to a PDF file.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iambw/simple_salad_recipe_generator.git"
+  },
+  "keywords": [],
+  "author": "brandon_wallace",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iambw/simple_salad_recipe_generator/issues"
+  },
+  "homepage": "https://github.com/iambw/simple_salad_recipe_generator#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.1.6"
+  }
+}
