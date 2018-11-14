@@ -383,4 +383,13 @@ my-email::before {
   img {
     max-width: 350px;
   }
+  .info {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .info {
+    font-size: 1.4rem;
+  }
 }
