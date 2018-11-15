@@ -347,8 +347,9 @@ my-email::before {
 
 @media only screen and (min-width: 786px) {
   section {
-    max-width: 1000px;
-    flex-wrap: wrap;
+    max-width: 1665px;
+    flex-direction: column;
+    justify-content: center;
   }
   h1 {
     font-size: 5rem;
@@ -363,6 +364,16 @@ my-email::before {
     width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+  }
+  #slot1,
+  #slot2,
+  #slot3,
+  #slot4,
+  #slot5,
+  #slot6 {
+  	width: 100%;
+  	max-height: 555px;
   }
   img {
     width: 100%;
