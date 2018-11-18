@@ -14,9 +14,9 @@ Generate a simple three ingredient salad recipe saved to a PDF file.
  
 * [Babel](https://babeljs.io/docs/en/)
 
-* [HTML5]
+* HTML5
 
-* [CSS3]
+* CSS3
 
 * [JQuery](https://jquery.com/)
 
