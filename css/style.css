@@ -270,9 +270,8 @@ button:hover {
   width: 100%;
   height: auto;
   max-width: 400px;
-  position: absolute;
+  position: relative;
   bottom: 0;
-  right: 0;
 }
 
 /* END Info page */
