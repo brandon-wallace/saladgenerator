@@ -63,9 +63,9 @@ doc.addImage(veggiesImg, 'JPG', 98, 230, 97, 55);
 // Run this invoke immediate function expression as soon as page loads.
 (function(){
 
-  const ingredient1 = ['kale_flat_leaf', 'kale_curly', 'romaine', 'spinach'];
-  const ingredient2 = ['bok_choy', 'fresh_corn', 'cucumbers', 'red_pepper', 'yellow_pepper', 'radish'];
-  const ingredient3 = ['avocado', 'cherry_tomato', 'string_beans', 'tomatoes', 'broccoli'];
+  const ingredient1 = ['flat_leaf_kale', 'curly_leaf_kale', 'romaine_lettuce', 'spinach', 'cabbage'];
+  const ingredient2 = ['bok_choy', 'fresh_corn_kernels', 'cucumbers', 'red_pepper', 'yellow_pepper', 'radish'];
+  const ingredient3 = ['avocado', 'cherry_tomato', 'string_beans', 'tomatoes', 'broccoli', 'carrots'];
 
   let slot1 = document.getElementById('slot1');
   let slot2 = document.getElementById('slot2');
@@ -121,7 +121,7 @@ const addFlavor = () => {
 
   const extraFlavor1 = ['flax_seeds', 'walnuts'];
   const extraFlavor2 = ['orange_slices', 'snap_peas'];
-  const extraFlavor3 = ['onion', 'shallot'];
+  const extraFlavor3 = ['red_onion', 'shallot'];
 
   // Display the extra ingredients.
   document.getElementById('extras').removeAttribute('class', 'hide');
