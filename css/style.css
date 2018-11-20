@@ -272,6 +272,7 @@ button:hover {
   max-width: 400px;
   position: relative;
   bottom: 0;
+  align-self: flex-end;
 }
 
 /* END Info page */
