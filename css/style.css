@@ -166,10 +166,25 @@ h1 {
               2px 2px 2px 1px rgba(0, 0, 0, .9);
 }
 
-#banner-text,
-#button,
+#banner-text {
+  animation: fadeIn 2000ms ease-in-out;
+}
+
+#button {
+  animation: fadeIn 4000ms ease-in-out;
+}
+
 #gif-img {
-  display: none;
+  animation: fadeIn 1000ms ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 section {
