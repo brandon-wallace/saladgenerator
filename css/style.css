@@ -11,21 +11,13 @@
   src: url('../fonts/FredokaOne-Regular.otf') format('opentype');
 }
 
-* {
-  box-sizing: border-box;
-}
-
-html {
-  /* Set correct line height for all browsers. */
-  line-height: 1.15;
-}
-
 html,
 body {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
+  line-height: 1.15;
   background-color: #ADE362;
   font-family: Helvetica, sans-serif;
 }
@@ -231,6 +223,7 @@ button:hover {
 .slots {
   width: 50%;
   display: flex;
+  box-sizing: border-box;
   flex-direction: column;
 }
 
@@ -267,6 +260,7 @@ button:hover {
   height: 100%;
   max-width: 320px;
   max-height: 200px;
+  box-sizing: border-box;
   border: 4px solid #2B5700;
 }
 
@@ -412,6 +406,7 @@ my-email::before {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    box-sizing: border-box;
   }
   #slot1,
   #slot2,
