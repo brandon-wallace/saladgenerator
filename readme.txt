@@ -11,14 +11,12 @@ Built with
 * Javascript ES6
 
 * JSPDF
- 
+
 * Babel
 
 * HTML5
 
 * CSS3
-
-* JQuery
 
 
 License

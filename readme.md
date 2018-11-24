@@ -11,14 +11,12 @@ Generate a simple three ingredient salad recipe saved to a PDF file.
 * Javascript ES6
 
 * [JSPDF](https://parall.ax/products/jspdf)
- 
+
 * [Babel](https://babeljs.io/docs/en/)
 
 * HTML5
 
 * CSS3
-
-* [JQuery](https://jquery.com/)
 
 
 ![screenshot1](images/screenshot1.png)
