@@ -168,7 +168,7 @@ h1 {
 }
 
 #gif-img {
-  animation: fadeIn 1000ms ease-in-out;
+  animation: fadeIn 1500ms ease-in-out;
 }
 
 @keyframes fadeIn {
