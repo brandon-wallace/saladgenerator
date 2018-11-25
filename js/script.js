@@ -14,7 +14,7 @@ const veggiesImg =
 // Create PDF document in portrait orientation, measurement in millimeters, A4 size.
 let doc = new jsPDF('portrait', 'mm', 'a4');
 
-// Get the current date.
+// Get the current date and time.
 const now = new Date();
 const minute = String(now.getMinutes());
 const hour = String(now.getHours());
@@ -75,7 +75,7 @@ doc.addImage(veggiesImg, 'JPG', 98, 230, 97, 55);
     slot3.src = 'images/' + item3 + '.png';
   }, 3000);
 
-  // Salad ingredients.
+  // Salad ingredients text.
   doc.setFontSize(22);
   doc.setFontStyle('bold');
   doc.text('Ingredients:', 10, 50);
@@ -86,7 +86,7 @@ doc.addImage(veggiesImg, 'JPG', 98, 230, 97, 55);
   doc.text(item3, 10, 85);
   doc.setFontSize(22);
   doc.setFontStyle('bold');
-  // Salad dressing.
+  // Salad dressing text.
   doc.text('Dressing:', 10, 135);
   doc.setFontStyle('normal');
   doc.setFontSize(14);
