@@ -273,8 +273,9 @@ button:hover {
 
 .info {
   width: 100%;
-  max-width: 600px;
   padding: 5px;
+  color: #172801;
+  max-width: 600px;
 }
 
 .info p {
@@ -306,6 +307,7 @@ button:hover {
 /* About page */
 
 .about-info {
+  color: #172801;
   padding: 20px;
   margin-top: 25px;
   font-weight: bold;
@@ -330,7 +332,8 @@ button:hover {
 /* Contact page */
 
 .contact-info {
-  padding: 20px;
+  padding: 25px;
+  color: #172801;
   margin-top: 25px;
   font-weight: bold;
   border-radius: 8px;
@@ -339,6 +342,7 @@ button:hover {
 }
 
 #contact-page {
+  text-align: center;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -352,8 +356,14 @@ my-email::before {
   content: attr(data-user) "\0040";
 }
 
-#null {
-    display: none;
+.icons {
+  display: flex;
+  font-size: 3.5rem;
+  justify-content: space-around;
+}
+
+.icons > a {
+  color: #172801;
 }
 
 /* END Contact page */
