@@ -136,6 +136,7 @@ const addFlavor = () => {
     slot6.src = 'images/' + item6 + '.png';
   }, 1500);
 
+  doc.setFontSize(16);
   doc.text(item4, 10, 95);
   doc.text(item5, 10, 105);
   doc.text(item6, 10, 115);
@@ -153,7 +154,7 @@ const downloadRecipe = () => {
 const regenerate = () => {
   // Get another random selection of ingredients.
   window.location.reload();
-  
+
 }
 
 
