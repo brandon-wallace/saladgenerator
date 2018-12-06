@@ -267,6 +267,10 @@ button:hover {
 
 /* Info page */
 
+.info-text {
+  padding: 15px;
+}
+
 .info {
   width: 100%;
   max-width: 600px;
