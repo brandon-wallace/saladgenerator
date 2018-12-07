@@ -98,12 +98,13 @@ a {
 
 #menu li {
   padding: 15px;
-  margin-bottom: 1px;
+  margin-top: 1px;
   background-color: #599900;
 }
 
 #menu li:first-child {
   padding: 10px;
+  margin-top: 0;
 }
 
 #menu li:hover {
@@ -221,17 +222,23 @@ button:hover {
               2px 2px 2px 1px rgba(0, 0, 0, .9);
 }
 
+.generator {
+  background-color: #3e6a14;
+}
+
 .slots {
   width: 50%;
   display: flex;
   box-sizing: border-box;
   flex-direction: column;
+  background-color: #3e6a14;
 }
 
 .box {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #ADE362;
 }
 
 .slot1,
