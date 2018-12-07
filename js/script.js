@@ -110,7 +110,7 @@ doc.addImage(veggiesImg, 'JPG', 98, 230, 97, 55);
 const addFlavor = () => {
 
   const extraFlavor1 = ['flax_seeds', 'walnuts', 'almonds'];
-  const extraFlavor2 = ['orange_slices', 'snap_peas', 'feta_cheese'];
+  const extraFlavor2 = ['orange_slices', 'parsley', 'feta_cheese'];
   const extraFlavor3 = ['red_onion', 'shallot', 'garlic'];
 
   // Display the extra ingredients.
