@@ -327,6 +327,14 @@ button:hover {
   padding: 10px;
 }
 
+.about-info a {
+  color: #000BFF;
+}
+
+.about-info a:hover {
+  color: #36DB04;
+}
+
 #about-page {
   background-size: cover;
   background-position: center;
