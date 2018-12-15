@@ -19,9 +19,9 @@ Generate a simple three ingredient salad recipe saved to a PDF file.
 * CSS3
 
 
-![screenshot1](images/screenshot1.png)
+![screenshot1](images/screenshot1.jpg)
 
-![screenshot2](images/screenshot2.png)
+![screenshot2](images/screenshot2.jpg)
 
 
 ## License
