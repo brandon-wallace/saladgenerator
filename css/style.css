@@ -14,11 +14,18 @@
 
 html,
 body {
-  margin: 0;
-  padding: 0;
   width: 100%;
   height: 100%;
+}
+
+html {
   line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
   background-color: #ADE362;
   font-family: Helvetica, sans-serif;
 }
@@ -73,22 +80,19 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-
   background: linear-gradient(rgba(0, 0, 0, 0.65), transparent), url('../images/lettuce.jpg'), no-repeat;
-  background-size: cover;
   background-position: center;
-  /* background-repeat: no-repeat; */
-  /* , url('../images/lettuce.jpg'), center, no-repeat; */
+  background-size: cover;
 }
 
 #menu {
   margin: 0;
-  width: 100%;
-  padding-left: 0;
-  position: absolute;
   top: 0px;
   right: 0px;
+  width: 100%;
   display: flex;
+  padding-left: 0;
+  position: absolute;
   flex-direction: column;
   list-style-type: none;
   background-color: #ADE362;
@@ -238,8 +242,8 @@ button:hover {
 
 .box {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   background-color: #ADE362;
 }
 
@@ -275,7 +279,6 @@ button:hover {
 }
 
 /* Info page */
-
 .info-text {
   padding: 15px;
 }
@@ -303,26 +306,24 @@ button:hover {
 }
 
 #vegetables_walking {
+  bottom: 0;
   width: 100%;
   height: auto;
   max-width: 400px;
   position: relative;
-  bottom: 0;
   align-self: flex-end;
 }
-
 /* END Info page */
 
 /* About page */
-
 .about-info {
-  color: #172801;
   padding: 20px;
+  color: #172801;
   margin-top: 25px;
   font-weight: bold;
   border-radius: 8px;
   background-color: #ADE362;
-	box-shadow: 0 4px 9px #000;
+	box-shadow: 0 4px 9px #000000;
 }
 
 .about-info li {
@@ -343,11 +344,9 @@ button:hover {
   background-repeat: no-repeat;
   background-image: url('../images/leafy_greens.jpg');
 }
-
 /* END About page */
 
 /* Contact page */
-
 .contact-info {
   padding: 25px;
   color: #172801;
@@ -382,12 +381,10 @@ my-email::before {
 .icons > a {
   color: #172801;
 }
-
 /* END Contact page */
 
 
 /* Media Queries */
-
 @media only screen and (min-width: 576px) {
   h1 {
     width: 100%;
@@ -480,5 +477,4 @@ my-email::before {
     font-size: 1.4rem;
   }
 }
-
 /* END Media Queries */
