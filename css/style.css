@@ -85,7 +85,7 @@ a {
   background-size: cover;
 }
 
-#menu {
+.menu {
   margin: 0;
   top: 0px;
   right: 0px;
@@ -98,22 +98,22 @@ a {
   background-color: #ADE362;
 }
 
-#menu:hover li {
+.menu:hover li {
   display: block;
 }
 
-#menu li {
+.menu li {
   padding: 15px;
   margin-top: 1px;
   background-color: #599900;
 }
 
-#menu li:first-child {
+.menu li:first-child {
   padding: 10px;
   margin-top: 0;
 }
 
-#menu li:hover {
+.menu li:hover {
   background-color: #315302;
 }
 
@@ -405,7 +405,7 @@ my-email::before {
   .column {
     height: 90%;
   }
-  #menu {
+  .menu {
     width: 150px;
   }
   .controls {
