@@ -307,7 +307,7 @@ button:hover {
   padding-left: 20px;
 }
 
-#vegetables_walking {
+.vegetables_walking {
   bottom: 0;
   width: 100%;
   height: auto;
