@@ -3,7 +3,7 @@ Simple Salad Recipe Generator
 Generate a simple three ingredient salad recipe saved to a PDF file.
 
 
-A mobile first, responsive recipe generator created using Javascript, jsPDF, HTML, and CSS.
+A mobile first, responsive recipe generator created using Javascript ES6, jsPDF, HTML, and CSS.
 
 
 Built with
