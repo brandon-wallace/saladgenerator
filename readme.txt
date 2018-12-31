@@ -6,7 +6,11 @@ A mobile first, responsive recipe generator created using Javascript ES6, jsPDF,
 
 https://iambw.github.io/simplesaladrecipegenerator
 
-Built with
+Features:
+
+* Mobile first
+
+* Responsive Design
 
 * Javascript ES6
 

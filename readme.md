@@ -6,7 +6,11 @@
 
 ## https://iambw.github.io/simplesaladrecipegenerator
 
-## Built with
+## Features:
+
+* Mobile first
+
+* Responsive Design
 
 * Javascript ES6
 
