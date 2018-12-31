@@ -2,9 +2,9 @@
 
 ## Generate a simple three ingredient salad recipe saved to a PDF file.
 
-
 ## A mobile first, responsive recipe generator created using Javascript ES6, jsPDF, HTML, and CSS.
 
+## https://iambw.github.io/simplesaladrecipegenerator
 
 ## Built with
 
