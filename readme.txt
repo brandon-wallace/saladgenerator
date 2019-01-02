@@ -8,7 +8,7 @@ https://iambw.github.io/simplesaladrecipegenerator
 
 Features:
 
-* Mobile first
+* Mobile First
 
 * Responsive Design
 
