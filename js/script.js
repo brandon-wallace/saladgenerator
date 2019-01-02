@@ -53,7 +53,7 @@ doc.addImage(veggiesImg, 'JPG', 98, 230, 97, 55);
 // Run this invoke immediate function expression as soon as page loads.
 (function(){
 
-  const ingredient1 = ['flat_leaf_kale', 'curly_leaf_kale', 'romaine_lettuce', 'spinach', 'cabbage', 'arugula', 'watercress' ];
+  const ingredient1 = ['flat_leaf_kale', 'curly_leaf_kale', 'romaine_lettuce', 'spinach', 'cabbage', 'arugula', 'watercress'];
   const ingredient2 = ['bok_choy', 'fresh_corn_kernels', 'cucumbers', 'red_pepper', 'yellow_pepper', 'radish'];
   const ingredient3 = ['avocado', 'cherry_tomato', 'tomatoes', 'broccoli', 'carrots', 'radicchio', 'endive', 'dandelion'];
 
@@ -66,6 +66,7 @@ doc.addImage(veggiesImg, 'JPG', 98, 230, 97, 55);
   const item3 = ingredient3[Math.floor(Math.random() * ingredient3.length)];
 
   setTimeout(function() {
+
     slot1.src = 'images/' + item1 + '.png';
   }, 1000);
   setTimeout(function() {
@@ -126,7 +127,7 @@ const addFlavor = () => {
   const item6 = extraFlavor3[Math.floor(Math.random() * extraFlavor3.length)];
 
   setTimeout(function() {
-    slot4.setAttribute('class', 'fading');
+
     slot4.src = 'images/' + item4 + '.png';
   }, 500);
   setTimeout(function() {
