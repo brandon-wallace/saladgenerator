@@ -324,11 +324,19 @@ button:hover {
   font-weight: bold;
   border-radius: 8px;
   background-color: #ADE362;
-	box-shadow: 0 4px 9px #000000;
+  border: 4px solid #000000;
+  box-shadow: inset 0 0 0 4px #FFFFFF,
+                    9px 9px 2px 1px rgba(0, 0, 0, .9);
+}
+
+.about-info ul {
+  padding-left: 0;
+  list-style-type: none;
 }
 
 .about-info li {
   padding: 10px;
+  font-size: 1.2rem;
 }
 
 .about-info a {
@@ -355,7 +363,9 @@ button:hover {
   font-weight: bold;
   border-radius: 8px;
   background-color: #ADE362;
-  box-shadow: 0 4px 9px #000;
+  border: 4px solid #000000;
+  box-shadow: inset 0 0 0 4px #FFFFFF,
+                    9px 9px 2px 1px rgba(0, 0, 0, .9);
 }
 
 .contact-page {
@@ -364,6 +374,10 @@ button:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-image: url('../images/spinach_leaves.jpg');
+}
+
+.contact-name {
+  font-size: 1.9rem;
 }
 
 my-email::after {
