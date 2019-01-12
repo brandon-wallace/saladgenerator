@@ -292,6 +292,7 @@ button:hover {
 
 .slot-img:hover {
   border: 6px solid #1B3601;
+  background-color: rgba(43, 87, 0, 0.5);
 }
 
 /* Info page */
