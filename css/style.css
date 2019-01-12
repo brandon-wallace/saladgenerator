@@ -65,6 +65,7 @@ header {
 a {
   color: #FFFFFF;
   text-decoration: none;
+  font-weight: bold;
 }
 
 #landing-page {
