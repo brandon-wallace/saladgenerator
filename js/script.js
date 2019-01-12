@@ -117,6 +117,11 @@ const addFlavor = () => {
   const extraFlavor2 = ['orange_slices', 'parsley', 'feta_cheese'];
   const extraFlavor3 = ['red_onion', 'shallot', 'garlic'];
 
+  // Clear any previously set values.
+  item4 = "";
+  item5 = "";
+  item6 = "";
+
   item4 = extraFlavor1[Math.floor(Math.random() * extraFlavor1.length)];
   item5 = extraFlavor2[Math.floor(Math.random() * extraFlavor2.length)];
   item6 = extraFlavor3[Math.floor(Math.random() * extraFlavor3.length)];
@@ -144,6 +149,7 @@ const addFlavor = () => {
 
 const downloadRecipe = () => {
 
+  doc.setFontSize(16);
   doc.text(item4.replace(/_/g, " "), 10, 95);
   doc.text(item5.replace(/_/g, " "), 10, 105);
   doc.text(item6.replace(/_/g, " "), 10, 115);
