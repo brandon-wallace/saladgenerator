@@ -258,7 +258,7 @@ button:hover {
 }
 
 .fade {
-    animation: fadeIn2 2000ms ease-in-out;
+  animation: fadeIn2 2000ms ease-in-out;
 }
 
 @keyframes fadeIn2 {
@@ -288,6 +288,10 @@ button:hover {
   max-height: 200px;
   box-sizing: border-box;
   border: 4px solid #2B5700;
+}
+
+.slot-img:hover {
+  border: 6px solid #1B3601;
 }
 
 /* Info page */
