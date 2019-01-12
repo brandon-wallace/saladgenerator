@@ -66,7 +66,6 @@ doc.addImage(veggiesImg, 'JPG', 98, 230, 97, 55);
   const item3 = ingredient3[Math.floor(Math.random() * ingredient3.length)];
 
   setTimeout(function() {
-
     slot1.src = 'images/' + item1 + '.png';
   }, 1000);
   setTimeout(function() {
@@ -82,9 +81,9 @@ doc.addImage(veggiesImg, 'JPG', 98, 230, 97, 55);
   doc.text('Ingredients:', 10, 50);
   doc.setFontStyle('normal');
   doc.setFontSize(16);
-  doc.text(item1, 10, 65);
-  doc.text(item2, 10, 75);
-  doc.text(item3, 10, 85);
+  doc.text(item1.replace(/_/g, " "), 10, 65);
+  doc.text(item2.replace(/_/g, " "), 10, 75);
+  doc.text(item3.replace(/_/g, " "), 10, 85);
   doc.setFontSize(22);
   doc.setFontStyle('bold');
   // Salad dressing text.
@@ -127,7 +126,6 @@ const addFlavor = () => {
   const item6 = extraFlavor3[Math.floor(Math.random() * extraFlavor3.length)];
 
   setTimeout(function() {
-
     slot4.src = 'images/' + item4 + '.png';
   }, 500);
   setTimeout(function() {
@@ -138,9 +136,9 @@ const addFlavor = () => {
   }, 1500);
 
   doc.setFontSize(16);
-  doc.text(item4, 10, 95);
-  doc.text(item5, 10, 105);
-  doc.text(item6, 10, 115);
+  doc.text(item4.replace(/_/g, " "), 10, 95);
+  doc.text(item5.replace(/_/g, " "), 10, 105);
+  doc.text(item6.replace(/_/g, " "), 10, 115);
 
 }
 
