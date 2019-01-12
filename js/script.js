@@ -71,12 +71,15 @@ doc.addImage(veggiesImg, 'JPG', 98, 230, 97, 55);
 
   setTimeout(function() {
     slot1.src = 'images/' + item1 + '.png';
+    slot1.title = item1.replace(/_/, " ");
   }, 1000);
   setTimeout(function() {
     slot2.src = 'images/' + item2 + '.png';
+    slot2.title = item2.replace(/_/, " ");
   }, 2000);
   setTimeout(function() {
     slot3.src = 'images/' + item3 + '.png';
+    slot3.title = item3.replace(/_/, " ");
   }, 3000);
 
   // Salad ingredients text.
@@ -129,14 +132,20 @@ const addFlavor = () => {
   setTimeout(function() {
     document.getElementById("slot4").classList.add("fade");
     slot4.src = 'images/' + item4 + '.png';
+    slot4.title = item4.replace(/_/, " ");
+    slot4.alt = "vegetable";
   }, 500);
   setTimeout(function() {
     document.getElementById("slot5").classList.add("fade");
     slot5.src = 'images/' + item5 + '.png';
+    slot5.title = item5.replace(/_/, " ");
+    slot5.alt = "vegetable";
   }, 1000);
   setTimeout(function() {
     document.getElementById("slot6").classList.add("fade");
     slot6.src = 'images/' + item6 + '.png';
+    slot6.title = item6.replace(/_/, " ");
+    slot6.alt = "vegetable";
   }, 1500);
 
   // Display the extra ingredients.
