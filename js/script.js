@@ -127,12 +127,15 @@ const addFlavor = () => {
   item6 = extraFlavor3[Math.floor(Math.random() * extraFlavor3.length)];
 
   setTimeout(function() {
+    document.getElementById("slot4").classList.add("fade");
     slot4.src = 'images/' + item4 + '.png';
   }, 500);
   setTimeout(function() {
+    document.getElementById("slot5").classList.add("fade");
     slot5.src = 'images/' + item5 + '.png';
   }, 1000);
   setTimeout(function() {
+    document.getElementById("slot6").classList.add("fade");
     slot6.src = 'images/' + item6 + '.png';
   }, 1500);
 

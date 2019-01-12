@@ -167,7 +167,7 @@ a {
   letter-spacing: .25rem;
   border: 4px solid #000000;
   background-color: #ff6300;
-  animation: fadeIn 4000ms ease-in-out;
+  animation: fadeIn1 4000ms ease-in-out;
   box-shadow: inset 0 0 0 4px #FFFFFF,
                     9px 9px 2px 1px rgba(0, 0, 0, .9);
 }
@@ -185,17 +185,17 @@ a {
 .banner-text {
   font-size: 2rem;
   margin: 12px 0 0 0;
-  animation: fadeIn 2000ms ease-in-out;
+  animation: fadeIn1 2000ms ease-in-out;
 }
 
 .gif-img {
   width: 100%;
   height: auto;
   max-width: 290px;
-  animation: fadeIn 1500ms ease-in-out;
+  animation: fadeIn1 1500ms ease-in-out;
 }
 
-@keyframes fadeIn {
+@keyframes fadeIn1 {
   0% {
     opacity: 0;
   }
@@ -254,6 +254,20 @@ button:hover {
   box-sizing: border-box;
   flex-direction: column;
   background-color: #3E6A14;
+  animation: fadeIn2 2000ms ease-in-out;
+}
+
+.fade {
+    animation: fadeIn2 2000ms ease-in-out;
+}
+
+@keyframes fadeIn2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .slot-container {
