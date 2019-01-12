@@ -8,16 +8,24 @@
 
 @font-face {
   font-family: 'FredokaOne-Regular';
-  src: url('../fonts/FredokaOne-Regular.otf') format('opentype');
+  src: url('../fonts/FredokaOne-Regular.otf') format('opentype'),
+       url('../fonts/FredokaOne-Regular.ttf') format('truetype');
 }
 
 html,
 body {
-  margin: 0;
-  padding: 0;
   width: 100%;
   height: 100%;
+}
+
+html {
   line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
   background-color: #ADE362;
   font-family: Helvetica, sans-serif;
 }
@@ -49,7 +57,7 @@ header {
 
 .column {
   height: 95%;
-  width: 360px;
+  width: 320px;
   margin: 0 auto;
   display: flex;
   max-height: 800px;
@@ -58,55 +66,41 @@ header {
   justify-content: space-between;
 }
 
-#more-flavor {
-  height: 25px;
-}
-
 a {
   color: #FFFFFF;
   text-decoration: none;
   font-weight: bold;
 }
 
-#landing-page {
+.menu {
+  top: 0px;
+  margin: 0;
+  right: 0px;
   width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url('../images/lettuce.jpg');
-}
-
-#menu {
-  margin: 0;
-  width: 100%;
   padding-left: 0;
   position: absolute;
-  top: 0px;
-  right: 0px;
-  display: flex;
-  flex-direction: column;
   list-style-type: none;
+  flex-direction: column;
   background-color: #ADE362;
 }
 
-#menu:hover li {
+.menu:hover li {
   display: block;
 }
 
-#menu li {
+.menu li {
   padding: 15px;
-  margin-bottom: 1px;
+  margin-top: 1px;
   background-color: #599900;
 }
 
-#menu li:first-child {
+.menu li:first-child {
   padding: 10px;
+  margin-top: 0;
 }
 
-#menu li:hover {
+.menu li:hover {
   background-color: #315302;
 }
 
@@ -121,12 +115,36 @@ a {
   display: none;
 }
 
-h1 {
+.index-page {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: center;
+  border: 4px solid #000000;
+  background: linear-gradient(rgba(0, 0, 0, 0.65), transparent),
+              url('../images/lettuce.jpg'), no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.generate-btn,
+.banner-text,
+.info-banner,
+.about-banner,
+.contact-banner {
+  font-family: 'FredokaOne-Regular', Helvetica, sans-serif;
+}
+
+.banner-text,
+.info-banner,
+.about-banner,
+.contact-banner {
   width: 90%;
   color: #FF4000;
   font-size: 2.5rem;
   text-align: center;
-  margin: 30px 0px 0px 0px;
+  margin-top: 30px;
   text-shadow: 1px 1px 0 #FFFFFF,
                2px 2px 0 #FFFFFF,
                3px 3px 0 #FFFFFF,
@@ -134,11 +152,11 @@ h1 {
                5px 5px 0 #FFFFFF,
                6px 6px 0 #FFFFFF,
                7px 7px 2px rgba(0, 0, 0, 0.9),
-               7px 7px 4px rgba(0, 0, 0, 0.9);
-  font-family: 'FredokaOne-Regular', Helvetica, sans-serif;
+               7px 7px 4px rgba(0, 0, 0, 0.9),
+               7px 7px 6px rgba(0, 0, 0, 0.9);
 }
 
-#button {
+.generate-btn {
   width: 70%;
   padding: 15px;
   color: #FFFFFF;
@@ -149,26 +167,31 @@ h1 {
   letter-spacing: .25rem;
   border: 4px solid #000000;
   background-color: #ff6300;
+  animation: fadeIn 4000ms ease-in-out;
   box-shadow: inset 0 0 0 4px #FFFFFF,
                     9px 9px 2px 1px rgba(0, 0, 0, .9);
-  font-family: 'FredokaOne-Regular', Helvetica, sans-serif;
 }
 
-#button:hover {
+.generate-btn:hover {
   box-shadow: inset 0 0 0 4px #FFFFFF,
               2px 2px 2px 1px rgba(0, 0, 0, .9);
 }
 
+.generate-btn a {
+  font-size: 1.1rem;
+}
+
 /* Fade in effect using CSS animation */
-#banner-text {
+.banner-text {
+  font-size: 2rem;
+  margin: 12px 0 0 0;
   animation: fadeIn 2000ms ease-in-out;
 }
 
-#button {
-  animation: fadeIn 4000ms ease-in-out;
-}
-
-#gif-img {
+.gif-img {
+  width: 100%;
+  height: auto;
+  max-width: 290px;
   animation: fadeIn 1500ms ease-in-out;
 }
 
@@ -221,42 +244,30 @@ button:hover {
               2px 2px 2px 1px rgba(0, 0, 0, .9);
 }
 
+.generator {
+  background-color: #3E6A14;
+}
+
 .slots {
   width: 50%;
   display: flex;
   box-sizing: border-box;
   flex-direction: column;
+  background-color: #3E6A14;
 }
 
-.box {
+.slot-container {
   display: flex;
-  justify-content: center;
   align-items: center;
-}
-
-.slot1,
-.slot2,
-.slot3 {
-  display: flex;
   justify-content: center;
+  background-color: #ADE362;
 }
 
 .hide {
   display: none;
 }
 
-#gif-img {
-  width: 100%;
-  height: auto;
-  max-width: 320px;
-}
-
-#slot1,
-#slot2,
-#slot3,
-#slot4,
-#slot5,
-#slot6 {
+.slot-img {
   width: 100%;
   height: 100%;
   max-width: 320px;
@@ -266,11 +277,19 @@ button:hover {
 }
 
 /* Info page */
+.info-banner {
+  margin-bottom: 0;
+}
+
+.info-text {
+  padding: 15px;
+}
 
 .info {
   width: 100%;
-  max-width: 600px;
   padding: 5px;
+  color: #172801;
+  max-width: 600px;
 }
 
 .info p {
@@ -288,96 +307,133 @@ button:hover {
   padding-left: 20px;
 }
 
-#vegetables_walking {
+.vegetables_walking {
+  bottom: 0;
   width: 100%;
   height: auto;
   max-width: 400px;
   position: relative;
-  bottom: 0;
   align-self: flex-end;
 }
-
 /* END Info page */
 
 /* About page */
-
 .about-info {
   padding: 20px;
+  color: #172801;
   margin-top: 25px;
   font-weight: bold;
   border-radius: 8px;
   background-color: #ADE362;
-	box-shadow: 0px 4px 9px #000;
+  border: 4px solid #000000;
+  box-shadow: inset 0 0 0 4px #FFFFFF,
+                    9px 9px 2px 1px rgba(0, 0, 0, .9);
+}
+
+.about-info ul {
+  padding-left: 0;
+  list-style-type: none;
 }
 
 .about-info li {
   padding: 10px;
+  font-size: 1.2rem;
 }
 
-#about-page {
+.about-info a {
+  color: #000BFF;
+}
+
+.about-info a:hover {
+  color: #36DB04;
+}
+
+.about-page {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('../images/leafy_greens.jpg');
+}
+/* END About page */
+
+/* Contact page */
+.contact-info {
+  padding: 25px;
+  color: #172801;
+  margin-top: 25px;
+  font-weight: bold;
+  border-radius: 8px;
+  background-color: #ADE362;
+  border: 4px solid #000000;
+  box-shadow: inset 0 0 0 4px #FFFFFF,
+                    9px 9px 2px 1px rgba(0, 0, 0, .9);
+}
+
+.contact-page {
+  text-align: center;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-image: url('../images/leafy_greens.jpg');
 }
 
-/* END About page */
-
-/* Contact page */
-
-.contact-info {
-  padding: 20px;
-  margin-top: 25px;
-  font-weight: bold;
-  border-radius: 8px;
-  background-color: #ADE362;
-  box-shadow: 0px 4px 9px #000;
-}
-
-#contact-page {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url('../images/spinach_leaves.jpg');
+.contact-name {
+  font-size: 1.9rem;
 }
 
 my-email::after {
   content: attr(data-domain);
 }
+
 my-email::before {
   content: attr(data-user) "\0040";
 }
 
-#null {
-    display: none;
+.icons {
+  display: flex;
+  font-size: 3.5rem;
+  justify-content: space-around;
 }
 
+.icons > a {
+  color: #172801;
+}
 /* END Contact page */
 
 
 /* Media Queries */
+@media only screen and (min-width: 360px) {
+  .column {
+    width: 360px;
+  }
+  .banner-text {
+    font-size: 2.5rem;
+  }
+  .gif-img {
+    max-width: 320px;
+  }
+}
 
 @media only screen and (min-width: 576px) {
-  h1 {
+  .index-page {
+    box-sizing: border-box;
+    border: 8px solid #000000;
+  }
+  .banner-text,
+  .info-banner,
+  .about-banner,
+  .contact-banner {
     width: 100%;
     font-size: 3.5rem;
   }
-  #slot1,
-  #slot2,
-  #slot3,
-  #slot4,
-  #slot5,
-  #slot6 {
+  .slot-img {
     width: 100%;
   }
   img {
     width: 100%;
     height: auto;
   }
-  .column {
-    height: 90%;
-  }
-  #menu {
+  .menu {
     width: 150px;
   }
   .controls {
@@ -393,7 +449,10 @@ my-email::before {
     flex-direction: column;
     justify-content: center;
   }
-  h1 {
+  .banner-text,
+  .info-banner,
+  .about-banner,
+  .contact-banner {
     font-size: 5rem;
   }
   header {
@@ -402,6 +461,9 @@ my-email::before {
   .column {
     width: 80%;
   }
+  .generate-btn a {
+    font-size: 1.5rem;
+  }
   .slots {
     width: 100%;
     display: flex;
@@ -409,12 +471,7 @@ my-email::before {
     justify-content: center;
     box-sizing: border-box;
   }
-  #slot1,
-  #slot2,
-  #slot3,
-  #slot4,
-  #slot5,
-  #slot6 {
+  .slot-img {
   	width: 100%;
   	max-height: 555px;
   }
@@ -433,11 +490,18 @@ my-email::before {
 }
 
 @media only screen and (min-width: 922px) {
-  h1 {
+  .banner-text,
+  .info-banner,
+  .about-banner,
+  .contact-banner {
     font-size: 6rem;
+    margin: 0;
   }
   img {
     max-width: 350px;
+  }
+  .generate-btn a {
+    font-size: 2rem;
   }
   .info {
     font-size: 1.2rem;
@@ -449,5 +513,4 @@ my-email::before {
     font-size: 1.4rem;
   }
 }
-
 /* END Media Queries */

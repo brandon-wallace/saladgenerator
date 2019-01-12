@@ -57,9 +57,9 @@ doc.addImage(veggiesImg, 'JPG', 98, 230, 97, 55);
 // Run this invoke immediate function expression as soon as page loads.
 (function(){
 
-  const ingredient1 = ['flat_leaf_kale', 'curly_leaf_kale', 'romaine_lettuce', 'spinach', 'cabbage'];
+  const ingredient1 = ['flat_leaf_kale', 'curly_leaf_kale', 'romaine_lettuce', 'spinach', 'cabbage', 'arugula', 'watercress'];
   const ingredient2 = ['bok_choy', 'fresh_corn_kernels', 'cucumbers', 'red_pepper', 'yellow_pepper', 'radish'];
-  const ingredient3 = ['avocado', 'cherry_tomato', 'string_beans', 'tomatoes', 'broccoli', 'carrots'];
+  const ingredient3 = ['avocado', 'cherry_tomato', 'tomatoes', 'broccoli', 'carrots', 'radicchio', 'endive', 'dandelion'];
 
   const slot1 = document.getElementById('slot1');
   const slot2 = document.getElementById('slot2');
@@ -85,9 +85,9 @@ doc.addImage(veggiesImg, 'JPG', 98, 230, 97, 55);
   doc.text('Ingredients:', 10, 50);
   doc.setFontStyle('normal');
   doc.setFontSize(16);
-  doc.text(item1, 10, 65);
-  doc.text(item2, 10, 75);
-  doc.text(item3, 10, 85);
+  doc.text(item1.replace(/_/g, " "), 10, 65);
+  doc.text(item2.replace(/_/g, " "), 10, 75);
+  doc.text(item3.replace(/_/g, " "), 10, 85);
   doc.setFontSize(22);
   doc.setFontStyle('bold');
   // Salad dressing text.
@@ -113,9 +113,9 @@ doc.addImage(veggiesImg, 'JPG', 98, 230, 97, 55);
 // Add three extra ingredients for more flavor.
 const addFlavor = () => {
 
-  const extraFlavor1 = ['flax_seeds', 'walnuts'];
-  const extraFlavor2 = ['orange_slices', 'snap_peas'];
-  const extraFlavor3 = ['red_onion', 'shallot'];
+  const extraFlavor1 = ['flax_seeds', 'walnuts', 'almonds', 'chic_peas'];
+  const extraFlavor2 = ['orange_slices', 'parsley', 'feta_cheese'];
+  const extraFlavor3 = ['red_onion', 'shallot', 'garlic'];
 
   item4 = extraFlavor1[Math.floor(Math.random() * extraFlavor1.length)];
   item5 = extraFlavor2[Math.floor(Math.random() * extraFlavor2.length)];
@@ -144,9 +144,9 @@ const addFlavor = () => {
 
 const downloadRecipe = () => {
 
-  doc.text(item4, 10, 95);
-  doc.text(item5, 10, 105);
-  doc.text(item6, 10, 115);
+  doc.text(item4.replace(/_/g, " "), 10, 95);
+  doc.text(item5.replace(/_/g, " "), 10, 105);
+  doc.text(item6.replace(/_/g, " "), 10, 115);
 
   // Create the file name using the date.
   doc.save(`recipe-${year}-${month}-${day}-${hour}${minute}.pdf`);

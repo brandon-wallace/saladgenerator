@@ -4,6 +4,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="brandon wallace">
+    <meta name="description" content="A mobile first, responsive recipe generator created using Javascript, jspdf, html, and css">
     <link rel="icon" type="type/png" href="images/favicon.png">
     <link rel="stylesheet" href="css/style.css">
     <title>info | simple salad recipe generator</title>
@@ -12,14 +15,14 @@
   <body>
 
     <nav>
-      <ul id="menu">
+      <ul class="menu">
         <li>
           <div class="hamburger"></div>
           <div class="hamburger"></div>
           <div class="hamburger"></div>
         </li>
         <li class="hidden"><a href="index.html">home</a></li>
-        <li class="hidden"><a href="salad.html">generate recipe</a></li>
+        <li class="hidden"><a href="generator.html">generate recipe</a></li>
         <li class="hidden"><a href="info.html">info</a></li>
         <li class="hidden"><a href="about.html">about</a></li>
         <li class="hidden"><a href="contact.html">contact</a></li>
@@ -28,33 +31,35 @@
 
     <article>
 
-      <h1>INFO</h1>
+      <h1 class="info-banner">INFO</h1>
 
-      <div class="info">
-        <h2>WANT TO EAT HEALTHIER?</h2>
-        <h2>TIRED OF ALWAYS EATING THE SAME MEALS?</h2>
-        <h2>WANT A QUICK RECIPE TO MAKE IN LESS THAN 30 MINUTES?</h2>
-      </div>
+      <div class="info-text">
+        <div class="info">
+          <h2>WANT TO EAT HEALTHIER?</h2>
+          <h2>TIRED OF ALWAYS EATING THE SAME MEALS?</h2>
+          <h2>WANT A QUICK RECIPE TO MAKE IN LESS THAN 30 MINUTES?</h2>
+        </div>
 
-      <div class="info">
-        <p>Generate your own a random simple salad recipe using only 3 ingredients
+        <div class="info">
+          <p>Generate your own a random simple salad recipe using only 3 ingredients
            and an easy DIY salad dressing. Add a few more ingredients if you want
            more flavor and nutrition. Download the recipe in a PDF file.</p>
+        </div>
+
+        <div class="info">
+          <h2>Benefits of eating vegetables are:</h2>
+          <h3>* Fiber</h3>
+          <h3>* Vitamins</h3>
+          <h3>* Antioxidants</h3>
+          <h3>* Phytochemicals</h3>
+        </div>
+
+        <div class="info">
+          <h2>Fill your stomach with good stuff not the bad stuff.</h2>
+        </div>
       </div>
 
-      <div class="info">
-        <h2>Benefits of eating vegetables are:</h2>
-        <h3>* Fiber</h3>
-        <h3>* Vitamins</h3>
-        <h3>* Antioxidants</h3>
-        <h3>* Phytochemicals</h3>
-      </div>
-
-      <div class="info">
-        <h2>Fill your stomach with good stuff not the bad stuff.</h2>
-      </div>
-
-      <img id="vegetables_walking" src="images/vegetables_walking.png" alt="vegetables walking">
+      <img class="vegetables_walking" src="images/vegetables_walking.png" alt="vegetables walking">
 
     </article><!-- END article -->
 
