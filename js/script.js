@@ -71,15 +71,15 @@ doc.addImage(veggiesImg, 'JPG', 98, 230, 97, 55);
 
   setTimeout(function() {
     slot1.src = 'images/' + item1 + '.png';
-    slot1.title = item1.replace(/_/, " ");
+    slot1.title = item1.replace(/_/g, " ");
   }, 1000);
   setTimeout(function() {
     slot2.src = 'images/' + item2 + '.png';
-    slot2.title = item2.replace(/_/, " ");
+    slot2.title = item2.replace(/_/g, " ");
   }, 2000);
   setTimeout(function() {
     slot3.src = 'images/' + item3 + '.png';
-    slot3.title = item3.replace(/_/, " ");
+    slot3.title = item3.replace(/_/g, " ");
   }, 3000);
 
   // Salad ingredients text.
