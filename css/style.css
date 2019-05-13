@@ -68,8 +68,8 @@ header {
 
 a {
   color: #FFFFFF;
-  text-decoration: none;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .menu {
@@ -83,16 +83,11 @@ a {
   list-style-type: none;
   flex-direction: column;
   background-color: #ADE362;
+  border: 2px solid #599900;
 }
 
 .menu:hover li {
   display: block;
-}
-
-.menu li {
-  padding: 15px;
-  margin-top: 1px;
-  background-color: #599900;
 }
 
 .menu li:first-child {
@@ -100,7 +95,7 @@ a {
   margin-top: 0;
 }
 
-.menu li:hover {
+.menu-link:hover {
   background-color: #315302;
 }
 
@@ -113,6 +108,13 @@ a {
 
 .hidden {
   display: none;
+}
+
+.menu-link {
+  padding: 15px;
+  display: block;
+  margin-top: 1px;
+  background-color: #599900;
 }
 
 .index-page {
