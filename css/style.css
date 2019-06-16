@@ -30,6 +30,12 @@ body {
   font-family: Helvetica, sans-serif;
 }
 
+a {
+  color: #FFFFFF;
+  font-weight: bold;
+  text-decoration: none;
+}
+
 article {
   width: 100%;
   height: 100%;
@@ -52,36 +58,6 @@ header {
   min-height: 170px;
   align-items: center;
   justify-content: center;
-  background-color: #ADE362;
-}
-
-.column {
-  height: 95%;
-  width: 320px;
-  margin: 0 auto;
-  display: flex;
-  max-height: 800px;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-a {
-  color: #FFFFFF;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.menu {
-  top: 0px;
-  margin: 0;
-  right: 0px;
-  width: 100%;
-  display: flex;
-  padding-left: 0;
-  position: absolute;
-  list-style-type: none;
-  flex-direction: column;
   background-color: #ADE362;
 }
 
@@ -115,6 +91,20 @@ a {
   display: none;
 }
 
+.menu {
+  top: 0px;
+  margin: 0;
+  right: 0px;
+  width: 100%;
+  display: flex;
+  padding-left: 0;
+  position: absolute;
+  list-style-type: none;
+  flex-direction: column;
+  background-color: #ADE362;
+}
+
+/* Index page */
 .index-page {
   width: 100%;
   display: flex;
@@ -122,21 +112,40 @@ a {
   box-sizing: border-box;
   justify-content: center;
   border: 4px solid #000000;
-  background: linear-gradient(rgba(0, 0, 0, 0.65), transparent),
-              url('../images/lettuce.jpg'), no-repeat;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.65), transparent),
+    url('../images/lettuce.jpg'), no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.generate-btn,
-.banner-text,
+.index-content {
+  height: 95%;
+  /* width: 320px; */
+  margin: 0 auto;
+  display: flex;
+  max-height: 800px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.index-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.index-generate-btn,
+.index-banner,
 .info-banner,
 .about-banner,
 .contact-banner {
   font-family: 'FredokaOne-Regular', Helvetica, sans-serif;
 }
 
-.banner-text,
+.index-banner,
 .info-banner,
 .about-banner,
 .contact-banner {
@@ -156,7 +165,7 @@ a {
                7px 7px 6px rgba(0, 0, 0, 0.9);
 }
 
-.generate-btn {
+.index-generate-btn {
   width: 70%;
   padding: 15px;
   color: #FFFFFF;
@@ -172,23 +181,22 @@ a {
                     9px 9px 2px 1px rgba(0, 0, 0, .9);
 }
 
-.generate-btn:hover {
+.index-generate-btn:hover {
   box-shadow: inset 0 0 0 4px #FFFFFF,
               2px 2px 2px 1px rgba(0, 0, 0, .9);
 }
 
-.generate-btn a {
+.index-generate-btn a {
   font-size: 1.1rem;
 }
 
-/* Fade in effect using CSS animation */
-.banner-text {
+.index-banner {
   font-size: 2rem;
-  margin: 12px 0 0 0;
+  margin: 1rem 0;
   animation: fadeIn1 2000ms ease-in-out;
 }
 
-.gif-img {
+.index-img {
   width: 100%;
   height: auto;
   max-width: 290px;
@@ -203,7 +211,9 @@ a {
     opacity: 1;
   }
 }
+/* END Index page */
 
+/* Generate page */
 section {
   width: 100%;
   height: 50%;
@@ -294,6 +304,7 @@ button:hover {
   border: 6px solid #1B3601;
   background-color: rgba(43, 87, 0, 0.5);
 }
+/* END Generate page */
 
 /* Info page */
 .info-banner {
@@ -419,16 +430,46 @@ my-email::before {
 }
 /* END Contact page */
 
-
 /* Media Queries */
-@media only screen and (min-width: 360px) {
+@media only screen and (orientation: landscape) and (min-height: 300px) {
+  .index-content {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .index-text {
+    width: 50vw;
+    justify-content: space-between;
+  }
+  .index-banner {
+    font-size: 2rem;
+  }
+  .index-img {
+    max-width: 290px;
+    margin: 1rem;
+  }
+  header {
+    min-height: 90px;
+  }
+  .controls {
+    width: 815px;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .controls button {
+    width: 30%;
+    font-size: .75rem;
+  }
+}
+
+@media only screen and (min-width: 360px) and (orientation: portrait){
   .column {
     width: 360px;
   }
-  .banner-text {
+  .index-banner {
     font-size: 2.5rem;
   }
-  .gif-img {
+  .index-img {
     max-width: 320px;
   }
 }
@@ -438,7 +479,7 @@ my-email::before {
     box-sizing: border-box;
     border: 8px solid #000000;
   }
-  .banner-text,
+  .index-banner,
   .info-banner,
   .about-banner,
   .contact-banner {
@@ -468,7 +509,7 @@ my-email::before {
     flex-direction: column;
     justify-content: center;
   }
-  .banner-text,
+  .index-banner,
   .info-banner,
   .about-banner,
   .contact-banner {
@@ -480,7 +521,7 @@ my-email::before {
   .column {
     width: 80%;
   }
-  .generate-btn a {
+  .index-generate-btn a {
     font-size: 1.5rem;
   }
   .slots {
@@ -509,7 +550,7 @@ my-email::before {
 }
 
 @media only screen and (min-width: 922px) {
-  .banner-text,
+  .index-banner,
   .info-banner,
   .about-banner,
   .contact-banner {
@@ -519,7 +560,7 @@ my-email::before {
   img {
     max-width: 350px;
   }
-  .generate-btn a {
+  .index-generate-btn a {
     font-size: 2rem;
   }
   .info {
