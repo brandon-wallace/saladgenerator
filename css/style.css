@@ -448,6 +448,7 @@ my-email::before {
     max-width: 290px;
     margin: 1rem;
   }
+  /* Generate page */
   header {
     min-height: 90px;
   }
