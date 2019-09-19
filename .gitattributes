@@ -1,4 +1,4 @@
 *.html linguist-vendored
 css/*.css linguist-vendored
-images/*.png linguist-vendored
-*.js linguist-detectable=true
+js/jspdf.min.js linguist-vendored
+js/script.js linguist-detectable=true
