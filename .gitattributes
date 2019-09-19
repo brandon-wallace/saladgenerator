@@ -1,4 +1,2 @@
-*.html linguist-vendored
-css/*.css linguist-vendored
-js/jspdf.min.js linguist-vendored
-js/script.js linguist-detectable=true
+css/*.css linguist-language=Javascript
+*.html linguist-language=Javascript
