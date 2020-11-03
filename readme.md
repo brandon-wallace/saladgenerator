@@ -4,7 +4,7 @@
 
 # A mobile first, responsive recipe generator created using Javascript ES6, jsPDF, HTML, and CSS.
 
-# https://brandon-wallace.github.io/simplesaladrecipegenerator
+# https://saladgenerator.tk
 
 # Features:
 
