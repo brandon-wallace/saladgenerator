@@ -27,6 +27,16 @@
 
 ![screenshot2](images/screenshot2.jpg)
 
+1. Clone project.
+```
+git clone https://github.com/brandon-wallace/saladgenerator.git
+```
+
+2. Compile babel after editing the Javascript file.
+```
+./node_modules/.bin/babel src/ --out-dir js --verbose
+```
+
 
 # License
 
