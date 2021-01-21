@@ -239,6 +239,7 @@ section {
   width: 100%;
   padding: 6px;
   color: #FFFFFF;
+  font-size: 1rem;
   font-weight: bold;
   border-radius: 5px;
   margin-bottom: 4px;
@@ -459,7 +460,6 @@ my-email::before {
   }
   .controls button {
     width: 30%;
-    font-size: .75rem;
   }
 }
 
@@ -505,6 +505,16 @@ my-email::before {
 }
 
 @media only screen and (min-width: 786px) {
+  article {
+    align-items: unset;
+  }
+  .menu {
+    width: 100%;
+    flex-direction: row;
+  }
+  .hidden {
+    display: block;
+  }
   section {
     max-width: 1665px;
     flex-direction: column;
@@ -546,6 +556,7 @@ my-email::before {
     justify-content: space-between;
   }
   .controls button {
+    height: 40px;
     max-width: 250px;
   }
 }

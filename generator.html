@@ -14,7 +14,7 @@
 
   <body class="generator">
 
-    <article>
+    <header>
 
       <nav>
 
@@ -31,19 +31,30 @@
           <li class="hidden"><a class="menu-link" href="contact.html">contact</a></li>
         </ul>
 
-      </nav><!-- END nav -->
+      </nav>
 
-      <header class="generator">
+      <!-- END nav -->
+
+    </header>
+      
+    <!-- END header -->
+
+    <main>
+
+      <div class="generator">
+
         <div class="controls">
           <button onclick="regenerate()">REGENERATE</button>
           <button onclick="addFlavor()">ADD EXTRA FLAVOR</button>
           <button onclick="downloadRecipe()">DOWNLOAD</button>
         </div>
-      </header><!-- END header -->
 
+      </div>
+      
       <section>
 
         <div class="slots">
+
           <div class="slot-container">
             <img class="slot-img" id="slot1" src="images/slot1.gif" alt="vegetable">
           </div>
@@ -55,9 +66,11 @@
           <div class="slot-container">
             <img class="slot-img" id="slot3" src="images/slot1.gif" alt="vegetable">
           </div>
+
         </div>
 
         <div class="slots hide" id="extras">
+
           <div class="slot-container">
             <img class="slot-img" id="slot4" src="" alt="">
           </div>
@@ -69,11 +82,16 @@
           <div class="slot-container">
             <img class="slot-img" id="slot6" src="" alt="">
           </div>
+
         </div>
 
-      </section><!-- END section -->
+      </section>
+      
+      <!-- END section -->
 
-    </article><!-- END article -->
+    </main>
+
+    <!-- END main -->
 
     <script src="js/jspdf.min.js"></script>
     <script src="js/script.js"></script>
