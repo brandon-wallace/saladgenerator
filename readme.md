@@ -1,12 +1,12 @@
 # Simple Salad Recipe Generator
 
-## Generate a simple three ingredient salad recipe saved to a PDF file.
+# Generate a simple three ingredient salad recipe saved to a PDF file.
 
-## A mobile first, responsive recipe generator created using Javascript ES6, jsPDF, HTML, and CSS.
+# A mobile first, responsive recipe generator created using Javascript ES6, jsPDF, HTML, and CSS.
 
-## https://brandon-wallace.github.io/simplesaladrecipegenerator
+# https://saladgenerator.tk
 
-## Features:
+# Features:
 
 * Mobile First
 
@@ -27,7 +27,17 @@
 
 ![screenshot2](images/screenshot2.jpg)
 
+1. Clone project.
+```
+git clone https://github.com/brandon-wallace/saladgenerator.git
+```
 
-## License
+2. Compile babel after editing the Javascript file.
+```
+./node_modules/.bin/babel src/ --out-dir js --verbose
+```
+
+
+# License
 
 This project is licensed under the GPL-3.0 License.
