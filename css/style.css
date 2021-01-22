@@ -36,7 +36,7 @@ a {
   text-decoration: none;
 }
 
-article {
+main {
   width: 100%;
   height: 100%;
   display: flex;
@@ -46,19 +46,18 @@ article {
 }
 
 nav {
-  height: 3%;
-  min-height: 40px;
   background-color: #ADE362;
 }
 
+.hamburger__btn {
+  width: 50px;
+  height: 50px;
+}
+
 header {
-  height: 10%;
   width: 100%;
-  display: flex;
-  min-height: 170px;
-  align-items: center;
-  justify-content: center;
-  background-color: #ADE362;
+  position: relative;
+  margin-bottom: .5em;
 }
 
 .column {
@@ -79,20 +78,32 @@ a {
 }
 
 .menu {
-  top: 0px;
   margin: 0;
-  right: 0px;
   width: 100%;
   display: flex;
   padding-left: 0;
-  position: absolute;
   list-style-type: none;
   flex-direction: column;
   background-color: #ADE362;
   border: 2px solid #599900;
 }
 
-.menu:hover li {
+.hidden {
+  display: none;
+}
+
+.hamburger__bttn {
+    z-index: 5;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.hamburger__bttn:hover + .menu > .hidden {
   display: block;
 }
 
@@ -110,10 +121,6 @@ a {
   height: 5px;
   margin: 5px 0;
   background-color: black;
-}
-
-.hidden {
-  display: none;
 }
 
 .menu-link {
@@ -148,9 +155,9 @@ a {
 .info-banner,
 .about-banner,
 .contact-banner {
-  width: 90%;
+  width: 96%;
   color: #FF4000;
-  font-size: 2.5rem;
+  font-size: 2.75rem;
   text-align: center;
   margin-top: 30px;
   text-shadow: 1px 1px 0 #FFFFFF,
@@ -191,7 +198,6 @@ a {
 
 /* Fade in effect using CSS animation */
 .banner-text {
-  font-size: 2rem;
   margin: 12px 0 0 0;
   animation: fadeIn1 2000ms ease-in-out;
 }
@@ -256,6 +262,7 @@ button:hover {
 }
 
 .generator {
+  margin-bottom: .5em;
   background-color: #3E6A14;
 }
 
@@ -438,7 +445,7 @@ my-email::before {
     flex-direction: row;
     justify-content: center;
   }
-  .index-text {
+  .banner-text {
     width: 50vw;
     justify-content: space-between;
   }
@@ -505,12 +512,13 @@ my-email::before {
 }
 
 @media only screen and (min-width: 786px) {
-  article {
+  main {
     align-items: unset;
   }
   .menu {
     width: 100%;
     flex-direction: row;
+    justify-content: flex-end;
   }
   .hidden {
     display: block;
@@ -526,9 +534,11 @@ my-email::before {
   .contact-banner {
     font-size: 5rem;
   }
+  /*
   header {
     min-height: 100px;
   }
+  */
   .column {
     width: 80%;
   }
@@ -552,6 +562,7 @@ my-email::before {
   }
   .controls {
     width: 815px;
+    margin: 0 auto;
     flex-direction: row;
     justify-content: space-between;
   }
