@@ -36,6 +36,116 @@ a {
   text-decoration: none;
 }
 
+header {
+  width: 100%;
+  margin-bottom: .5em;
+  background-color: #3E6A14;
+}
+
+nav {
+  width: 100%;
+  z-index: 99;
+  position: relative;
+  background-color: #ADE362;
+}
+
+nav input[type="checkbox"] {
+    opacity: 0;
+    z-index: -1;
+    position: absolute;
+}
+
+nav label {
+    padding: .5em;
+    display: block;
+    cursor: pointer;
+}
+
+.hamburger__icon,
+.hamburger__icon:before,
+.hamburger__icon:after {
+    width: 100%;
+    height: .3em;
+    background-color: #1D1F20;
+    transition: all 0.4s ease-in-out;
+}
+
+.hamburger__icon {
+    margin: .5em 0;
+    max-width: 2em;
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger__icon:before,
+.hamburger__icon:after {
+    content: '';
+    left: 0;
+    position: absolute;
+}
+
+.hamburger__icon:before {
+    top: -0.7em;
+}
+
+.hamburger__icon:after {
+    bottom: -0.7em;
+}
+
+/* Transform hamburger button on click */
+nav input[type="checkbox"]:checked + label .hamburger__icon {
+    background-color: transparent;
+}
+
+nav input[type="checkbox"]:checked + label .hamburger__icon:before {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+nav input[type="checkbox"]:checked + label .hamburger__icon:after {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+/* Display menu full screen */
+nav input:checked ~ .overlay {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: #ADE362;
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    width: 100%;
+    max-height: 0;
+    list-style: none;
+    overflow: hidden;
+    font-size: 1.4rem;
+    line-height: 2em;
+}
+
+nav input:checked ~ .menu {
+    opacity: 1;
+    margin: 1em;
+    max-height: inherit;
+}
+
+.menu__link {
+    color: #000000;
+}
+
+.menu__link:hover {
+    border-bottom: 4px solid #000000;
+}
+
 main {
   width: 100%;
   height: 100%;
@@ -43,21 +153,6 @@ main {
   align-items: center;
   flex-direction: column;
   justify-content: flex-start;
-}
-
-nav {
-  background-color: #ADE362;
-}
-
-.hamburger__btn {
-  width: 50px;
-  height: 50px;
-}
-
-header {
-  width: 100%;
-  position: relative;
-  margin-bottom: .5em;
 }
 
 .column {
@@ -69,65 +164,6 @@ header {
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
-}
-
-a {
-  color: #FFFFFF;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.menu {
-  margin: 0;
-  width: 100%;
-  display: flex;
-  padding-left: 0;
-  list-style-type: none;
-  flex-direction: column;
-  background-color: #ADE362;
-  border: 2px solid #599900;
-}
-
-.hidden {
-  display: none;
-}
-
-.hamburger__bttn {
-    z-index: 5;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    cursor: pointer;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-}
-
-.hamburger__bttn:hover + .menu > .hidden {
-  display: block;
-}
-
-.menu li:first-child {
-  padding: 10px;
-  margin-top: 0;
-}
-
-.menu-link:hover {
-  background-color: #315302;
-}
-
-.hamburger {
-  width: 35px;
-  height: 5px;
-  margin: 5px 0;
-  background-color: black;
-}
-
-.menu-link {
-  padding: 15px;
-  display: block;
-  margin-top: 1px;
-  background-color: #599900;
 }
 
 .index-page {
@@ -501,9 +537,6 @@ my-email::before {
     width: 100%;
     height: auto;
   }
-  .menu {
-    width: 150px;
-  }
   .controls {
     width: 100%;
     flex-direction: row;
@@ -514,11 +547,6 @@ my-email::before {
 @media only screen and (min-width: 786px) {
   main {
     align-items: unset;
-  }
-  .menu {
-    width: 100%;
-    flex-direction: row;
-    justify-content: flex-end;
   }
   .hidden {
     display: block;
@@ -534,11 +562,6 @@ my-email::before {
   .contact-banner {
     font-size: 5rem;
   }
-  /*
-  header {
-    min-height: 100px;
-  }
-  */
   .column {
     width: 80%;
   }
@@ -596,4 +619,5 @@ my-email::before {
     font-size: 1.4rem;
   }
 }
+
 /* END Media Queries */
