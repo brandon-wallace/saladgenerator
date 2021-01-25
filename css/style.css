@@ -157,27 +157,24 @@ main {
     height: 100%;
     display: flex;
     align-items: center;
-    flex-direction: column;
     justify-content: flex-start;
 }
 
-.column {
-    height: 95%;
-    width: 320px;
-    margin: 0 auto;
-    display: flex;
-    max-height: 800px;
-    align-items: center;
+.generator-page,
+.info-page,
+.about-page,
+.contact-page {
     flex-direction: column;
-    justify-content: space-between;
 }
 
 .index-page {
     width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
+    padding: 1em 0 2em 0;
     box-sizing: border-box;
-    justify-content: center;
+    justify-content: flex-start;
     border: 4px solid #000000;
     background: linear-gradient(transparent, rgba(0, 0, 0, 0.65)),
                 url('../images/lettuce.jpg'), no-repeat;
@@ -185,19 +182,29 @@ main {
     background-size: cover;
 }
 
+.column {
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    max-height: 600px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .generate-btn,
 .banner-text,
 .info-banner,
 .about-banner,
 .contact-banner {
-  font-family: 'FredokaOne-Regular', Helvetica, sans-serif;
+    font-family: 'FredokaOne-Regular', sans-serif;
 }
 
 .banner-text,
 .info-banner,
 .about-banner,
 .contact-banner {
-    width: 96%;
+    width: 100%;
     color: #FF4000;
     font-size: 2.75rem;
     text-align: center;
@@ -213,20 +220,25 @@ main {
                  7px 7px 6px rgba(0, 0, 0, 0.9);
 }
 
+.banner-text {
+    font-size: 2.75rem;
+    margin: 0 0 0 -15px;
+}
+
 .generate-btn {
-    width: 70%;
+    width: 100%;
     padding: 15px;
     color: #FFFFFF;
-    max-width: 300px;
+    max-width: 250px;
     font-weight: bold;
     text-align: center;
     border-radius: 8px;
-    letter-spacing: .25rem;
+    letter-spacing: 2px;
     border: 4px solid #000000;
     background-color: #ff6300;
     animation: fadeIn1 4000ms ease-in-out;
     box-shadow: inset 0 0 0 4px #FFFFFF,
-                      9px 9px 2px 1px rgba(0, 0, 0, .9);
+                9px 9px 2px 1px rgba(0, 0, 0, .9);
 }
 
 .generate-btn:hover {
@@ -235,12 +247,11 @@ main {
 }
 
 .generate-btn a {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
 }
 
 /* Fade in effect using CSS animation */
 .banner-text {
-    margin: 12px 0 0 0;
     animation: fadeIn1 2000ms ease-in-out;
 }
 
@@ -477,17 +488,19 @@ button:hover {
 
 /* Media Queries */
 @media only screen and (orientation: landscape) and (min-height: 300px) {
-  .index-content {
-      width: 100%;
-      flex-direction: row;
-      justify-content: center;
+  .index-page {
+      height: auto;
   }
   .banner-text {
-      width: 50vw;
+      width: 100vw;
+      margin-bottom: .5em;
       justify-content: space-between;
   }
   .index-banner {
       font-size: 2rem;
+  }
+  .generate-btn {
+      margin: 0 auto 2em auto;
   }
   .index-img {
       max-width: 290px;
@@ -504,15 +517,29 @@ button:hover {
   }
 }
 
-@media only screen and (min-width: 360px) and (orientation: portrait){
+@media only screen and (min-width: 375px) and (orientation: portrait){
+  .index-page {
+      height: 100%;
+  }
+  .banner-text {
+      font-size: 3.25rem;
+  }
+
+}
+
+@media only screen and (min-width: 410px) {
+  .index-page {
+      height: 100%;
+      padding: 2em 0 2em 0;
+  }
+  .banner-text {
+      font-size: 3.75rem;
+  }
   .column {
-      width: 360px;
+      max-height: 700px;
   }
-  .index-banner {
-      font-size: 2.5rem;
-  }
-  .index-img {
-      max-width: 320px;
+  .gif-img {
+      max-width: 325px;
   }
 }
 
@@ -521,7 +548,9 @@ button:hover {
       box-sizing: border-box;
       border: 8px solid #000000;
   }
-  .index-banner,
+  .banner-text {
+      font-size: 4.75rem;
+  }
   .info-banner,
   .about-banner,
   .contact-banner {
@@ -531,26 +560,30 @@ button:hover {
   .slot-img {
       width: 100%;
   }
+  /*
   img {
       width: 100%;
       height: auto;
   }
+  */
 }
 
 @media only screen and (min-width: 786px) {
+  .column {
+      max-height: 700px;
+  }
+  .gif-img {
+      max-width: 375px;
+  }
   section {
       max-width: 1665px;
       flex-direction: column;
       justify-content: center;
   }
-  .index-banner,
   .info-banner,
   .about-banner,
   .contact-banner {
       font-size: 5rem;
-  }
-  .column {
-      width: 80%;
   }
   .index-generate-btn a {
       font-size: 1.5rem;
@@ -582,8 +615,14 @@ button:hover {
   }
 }
 
+@media only screen and (min-width: 825px) {
+  .column {
+      max-height: 800px;
+  }
+}
+
 @media only screen and (min-width: 922px) {
-  .index-banner,
+  .banner-text,
   .info-banner,
   .about-banner,
   .contact-banner {
@@ -593,7 +632,13 @@ button:hover {
   img {
       max-width: 350px;
   }
-  .index-generate-btn a {
+  .gif-img {
+      max-width: 455px;
+  }
+  .generate-btn {
+      max-width: 325px;
+  }
+  .generate-btn a {
       font-size: 2rem;
   }
   .info {
