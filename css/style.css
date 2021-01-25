@@ -27,7 +27,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #ADE362;
-  font-family: Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 a {
@@ -45,6 +45,7 @@ header {
 nav {
   width: 100%;
   z-index: 99;
+  height: 42px;
   position: relative;
   background-color: #ADE362;
 }
@@ -56,7 +57,7 @@ nav input[type="checkbox"] {
 }
 
 nav label {
-    padding: .5em;
+    padding: .6em;
     display: block;
     cursor: pointer;
 }
@@ -65,7 +66,7 @@ nav label {
 .hamburger__icon:before,
 .hamburger__icon:after {
     width: 100%;
-    height: .3em;
+    height: .31em;
     background-color: #1D1F20;
     transition: all 0.4s ease-in-out;
 }
@@ -121,21 +122,26 @@ nav input:checked ~ .overlay {
 }
 
 .menu {
-    margin: 0;
     padding: 0;
     opacity: 0;
-    width: 100%;
+    width: 350px;
     max-height: 0;
+    margin: 0 auto;
     list-style: none;
     overflow: hidden;
-    font-size: 1.4rem;
-    line-height: 2em;
+    line-height: 1.75;
+}
+
+.menu li {
+    padding: 1em;
+    font-size: 1.5rem;
+    box-sizing: border-box;
 }
 
 nav input:checked ~ .menu {
     opacity: 1;
-    margin: 1em;
     max-height: inherit;
+    margin: 1em auto 0 auto;
 }
 
 .menu__link {
