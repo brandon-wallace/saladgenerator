@@ -14,22 +14,33 @@
 
   <body>
 
-    <nav>
-      <ul class="menu">
-        <li>
-          <div class="hamburger"></div>
-          <div class="hamburger"></div>
-          <div class="hamburger"></div>
-        </li>
-        <li class="hidden"><a class="menu-link" href="index.html">home</a></li>
-        <li class="hidden"><a class="menu-link" href="generator.html">generate recipe</a></li>
-        <li class="hidden"><a class="menu-link" href="info.html">info</a></li>
-        <li class="hidden"><a class="menu-link" href="about.html">about</a></li>
-        <li class="hidden"><a class="menu-link" href="contact.html">contact</a></li>
-      </ul>
-    </nav><!-- END navigation -->
+    <!-- START header -->
 
-    <article>
+    <header>
+
+      <nav>
+
+        <input id="hamburger" type="checkbox">
+        <label for="hamburger"><span class="hamburger__icon"></span></label>
+        <div class="overlay"></div>
+
+        <ul class="menu">
+          <li><a class="menu__link" href="index.html">home</a></li>
+          <li><a class="menu__link" href="generator.html">generate recipe</a></li>
+          <li><a class="menu__link" href="info.html">info</a></li>
+          <li><a class="menu__link" href="about.html">about</a></li>
+          <li><a class="menu__link" href="contact.html">contact</a></li>
+        </ul>
+
+      </nav>
+
+    </header>
+
+    <!-- END header -->
+
+    <!-- START main -->
+
+    <main>
 
       <h1 class="info-banner">INFO</h1>
 
@@ -61,7 +72,9 @@
 
       <img class="vegetables_walking" src="images/vegetables_walking.png" alt="vegetables walking">
 
-    </article><!-- END article -->
+    </main>
+    
+    <!-- END main -->
 
   </body>
 

@@ -444,7 +444,6 @@ button:hover {
 }
 
 .contact-page {
-  text-align: center;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -455,12 +454,8 @@ button:hover {
   font-size: 1.9rem;
 }
 
-my-email::after {
-  content: attr(data-domain);
-}
-
-my-email::before {
-  content: attr(data-user) "\0040";
+.contact-link {
+    color: #000000;
 }
 
 .icons {
@@ -493,9 +488,6 @@ my-email::before {
     margin: 1rem;
   }
   /* Generate page */
-  header {
-    min-height: 90px;
-  }
   .controls {
     width: 815px;
     flex-direction: row;
@@ -537,20 +529,9 @@ my-email::before {
     width: 100%;
     height: auto;
   }
-  .controls {
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
-  }
 }
 
 @media only screen and (min-width: 786px) {
-  main {
-    align-items: unset;
-  }
-  .hidden {
-    display: block;
-  }
   section {
     max-width: 1665px;
     flex-direction: column;
@@ -584,13 +565,13 @@ my-email::before {
     height: auto;
   }
   .controls {
-    width: 815px;
+    width: 800px;
     margin: 0 auto;
     flex-direction: row;
     justify-content: space-between;
   }
   .controls button {
-    height: 40px;
+    height: 50px;
     max-width: 250px;
   }
 }

@@ -14,22 +14,33 @@
 
   <body class="about-page">
 
-    <article>
+    <!-- START header -->
+
+    <header>
 
       <nav>
+
+        <input id="hamburger" type="checkbox">
+        <label for="hamburger"><span class="hamburger__icon"></span></label>
+        <div class="overlay"></div>
+
         <ul class="menu">
-          <li>
-            <div class="hamburger"></div>
-            <div class="hamburger"></div>
-            <div class="hamburger"></div>
-          </li>
-          <li class="hidden"><a class="menu-link" href="index.html">home</a></li>
-          <li class="hidden"><a class="menu-link" href="generator.html">generate recipe</a></li>
-          <li class="hidden"><a class="menu-link" href="info.html">info</a></li>
-          <li class="hidden"><a class="menu-link" href="about.html">about</a></li>
-          <li class="hidden"><a class="menu-link" href="contact.html">contact</a></li>
+          <li><a class="menu__link" href="index.html">home</a></li>
+          <li><a class="menu__link" href="generator.html">generate recipe</a></li>
+          <li><a class="menu__link" href="info.html">info</a></li>
+          <li><a class="menu__link" href="about.html">about</a></li>
+          <li><a class="menu__link" href="contact.html">contact</a></li>
         </ul>
-      </nav><!-- END nav -->
+
+      </nav>
+
+    </header>
+      
+    <!-- END header -->
+
+    <!-- START main -->
+
+    <main>
 
       <h1 class="about-banner">ABOUT</h1>
 
@@ -47,7 +58,9 @@
         </ul>
       </div>
 
-    </article><!-- END article -->
+    </main>
+    
+    <!-- END main -->
 
   </body>
 

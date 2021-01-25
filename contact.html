@@ -15,42 +15,53 @@
 
   <body class="contact-page">
 
-    <noscript>
-      <p>Please enable Javascript to view this website.</p>
-    </noscript>
+    <!-- START header -->
 
-    <article>
+    <header>
 
       <nav>
+
+        <input id="hamburger" type="checkbox">
+        <label for="hamburger"><span class="hamburger__icon"></span></label>
+        <div class="overlay"></div>
+
         <ul class="menu">
-          <li>
-            <div class="hamburger"></div>
-            <div class="hamburger"></div>
-            <div class="hamburger"></div>
-          </li>
-          <li class="hidden"><a class="menu-link" href="index.html">home</a></li>
-          <li class="hidden"><a class="menu-link" href="generator.html">generate recipe</a></li>
-          <li class="hidden"><a class="menu-link" href="info.html">info</a></li>
-          <li class="hidden"><a class="menu-link" href="about.html">about</a></li>
-          <li class="hidden"><a class="menu-link" href="contact.html">contact</a></li>
+          <li><a class="menu__link" href="index.html">home</a></li>
+          <li><a class="menu__link" href="generator.html">generate recipe</a></li>
+          <li><a class="menu__link" href="info.html">info</a></li>
+          <li><a class="menu__link" href="about.html">about</a></li>
+          <li><a class="menu__link" href="contact.html">contact</a></li>
         </ul>
-      </nav><!-- END nav -->
+
+      </nav>
+
+    </header>
+      
+    <!-- END header -->
+
+    <!-- START main -->
+
+    <main>
 
       <h1 class="contact-banner">CONTACT</h1>
 
       <div class="contact-info">
 
         <h2 class="contact-name">Brandon Wallace</h2>
-        <h3><strong><my-email data-user="brandonwallace" data-domain="fastmail.us"></my-email></strong></h3>
+
+        <h3><a class="contact-link" href="https://brandonwallace.cc">https://brandonwallace.cc</a></h3>
+
         <div class="icons">
-          <a href="https://github.com/brandon-wallace"><i class="fab fa-github"></i></a>
-          <span>|</span>
-          <a href="https://codepen.io/brandon_wallace/"><i class="fab fa-codepen"></i></a>
+          <a href="https://github.com/brandon-wallace" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
+          <a href="https://www.freecodecamp.org/brandon_wallace" rel="noreferrer" target="_blank"><i class="fab fa-free-code-camp"></i></a>
+          <a href="https://codepen.io/brandon_wallace/" target="_blank" rel="noreferrer"><i class="fab fa-codepen"></i></a>
         </div>
 
       </div>
 
-    </article><!-- END article -->
+    </main>
+    
+    <!-- END main -->
 
   </body>
 
