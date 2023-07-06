@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="icon" type="type/png" href="images/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <title>recipe - salad generator</title>
+
+  </head>
+
+  <body class="index-page">
+    
+    <noscript>
+      <p style="color:#FC0000;text-align:center">Please enable Javascript to view page properly.</p>
+    </noscript>
+
+    <!-- START header -->
+
+    <header>
+    </header>
+
+    <!-- END header -->
+
+    <!-- START main -->
+
+    <main>
+
+      <div class="generator">
+
+        <div class="controls">
+          <button class="btn regenerate" type="button">REGENERATE</button>
+          <button class="btn add-flavor" type="button">ADD INGREDIENTS</button>
+          <button class="btn download-pdf" type="button">DOWNLOAD PDF</button>
+        </div>
+
+      </div>
+
+      <!-- START section -->
+      
+      <section>
+
+        <div class="slots">
+
+          <div class="slot-container">
+            <img class="slot-img" id="slot1" src="images/slot1.gif" alt="vegetable">
+          </div>
+
+          <div class="slot-container">
+            <img class="slot-img" id="slot2" src="images/slot1.gif" alt="vegetable">
+          </div>
+
+          <div class="slot-container">
+            <img class="slot-img" id="slot3" src="images/slot1.gif" alt="vegetable">
+          </div>
+
+        </div>
+
+        <div class="slots hide" id="extras">
+
+          <div class="slot-container">
+            <img class="slot-img" id="slot4" src="" alt="">
+          </div>
+
+          <div class="slot-container">
+            <img class="slot-img" id="slot5" src="" alt="">
+          </div>
+
+          <div class="slot-container">
+            <img class="slot-img" id="slot6" src="" alt="">
+          </div>
+
+        </div>
+
+      </section>
+      
+      <!-- END section -->
+
+    </main>
+
+    <!-- END main -->
+
+    <!-- START footer -->
+
+    <footer>
+      <p class="footer-link"><a href="https://brandonwallace.cc" target="_blank" rel="nonreferrer">Brandon Wallace</a> &copy; <span class="year"></span></p>
+    </footer>
+
+    <!-- END footer -->
+
+    <script src="js/jspdf.min.js"></script>
+    <script type="module" src="js/image.js"></script>
+    <script type="module" src="js/script.js"></script>
+
+  </body>
+
+</html>
+
